@@ -16,6 +16,8 @@
       <module name="common" target="1.8" />
       <module name="consumer" target="1.8" />
       <module name="provider" target="1.8" />
+      <module name="provider_one" target="1.8" />
+      <module name="provider_two" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -24,6 +26,7 @@
       <module name="common" options="" />
       <module name="consumer" options="" />
       <module name="provider" options="" />
+      <module name="provider_one" options="" />
     </option>
   </component>
 </project>

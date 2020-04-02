@@ -2,6 +2,8 @@ package com.kgc.cn.consumer.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.kgc.cn.common.service.TestService;
+import com.kgc.cn.common.vo.UserVo;
+import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,5 +23,14 @@ public class TestController {
             e.printStackTrace();
             return 2;
         }
+    }
+
+    @GetMapping(value = "/getUser")
+    public UserVo getUser(){
+        UserVo user = testService.getUser();
+        if(!ObjectUtils.isEmpty(user)){
+            return user;
+        }
+        return null;
     }
 }

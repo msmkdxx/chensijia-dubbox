@@ -34,6 +34,35 @@
             <version>0.10</version>
         </dependency>
         <!-- zkclient 提供连接zookeeper 结束 -->
+        <!-- fastjson 开始 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.47</version>
+        </dependency>
+        <!-- fastjson 结束 -->
+        <!-- lombok 开始 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- lombok 结束 -->
+        <!-- springfox-swagger2 开始 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <!-- springfox-swagger2 结束 -->
+        <!-- swagger-bootstrap-ui 开始 -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+            <version>1.9.3</version>
+        </dependency>
+        <!-- swagger-bootstrap-ui 结束 -->
     </dependencies>
 
     <modules>

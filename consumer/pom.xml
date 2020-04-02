@@ -19,14 +19,18 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>com.kgc.cn</groupId>
             <artifactId>common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
-
+        <!-- redis 开始 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!-- redis 结束 -->
     </dependencies>
 
     <build>
