@@ -2,10 +2,17 @@ package com.kgc.cn.common.dto;
 
 import lombok.Data;
 
+import java.io.Serializable;
+import java.util.Date;
+
 @Data
-public class LoginUser {
-    private long u_id;
-    private String u_name;
-    private String u_password;
-    private int u_age;
+public class LoginUser implements Serializable {
+    private static final long serialVersionUID = 4903584473786182136L;
+    private Long id;
+    private String name;
+    private String password;
+    private String phone;
+    private String nickname;
+    private Long score;
+    private Date createtime;
 }

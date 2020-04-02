@@ -4,10 +4,10 @@ com\kgc\cn\consumer\utils\PageUtils.class
 com\kgc\cn\consumer\conf\CurrentUser.class
 com\kgc\cn\consumer\utils\ReturnResultUtils.class
 com\kgc\cn\consumer\controller\TestController.class
+com\kgc\cn\consumer\controller\UserController.class
 com\kgc\cn\consumer\utils\RedisUtils.class
 com\kgc\cn\consumer\conf\SwaggerConfig.class
 com\kgc\cn\consumer\conf\RedisConfig.class
-com\kgc\cn\consumer\controller\UsersController.class
 com\kgc\cn\consumer\conf\LoginReqired.class
 com\kgc\cn\consumer\conf\WebConfig.class
 com\kgc\cn\consumer\utils\ReturnResult.class

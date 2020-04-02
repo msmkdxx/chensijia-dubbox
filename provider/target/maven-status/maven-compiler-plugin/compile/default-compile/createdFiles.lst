@@ -1,0 +1,7 @@
+com\kgc\cn\provider\mapper\UserMapper.class
+com\kgc\cn\provider\conf\MybatisConfig.class
+com\kgc\cn\provider\ProviderApplication.class
+com\kgc\cn\provider\mapper\BookMapper.class
+com\kgc\cn\provider\service\UserServiceImpl.class
+com\kgc\cn\provider\service\BookServiceImpl.class
+com\kgc\cn\provider\service\TestServiceImpl.class

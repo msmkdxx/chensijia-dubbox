@@ -63,6 +63,14 @@
             <version>1.9.3</version>
         </dependency>
         <!-- swagger-bootstrap-ui 结束 -->
+        <!-- guava 开始 -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>28.2-jre</version>
+        </dependency>
+        <!-- guava 结束 -->
+
     </dependencies>
 
     <modules>
