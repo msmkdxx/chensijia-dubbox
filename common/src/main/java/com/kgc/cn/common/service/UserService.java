@@ -1,7 +1,6 @@
 package com.kgc.cn.common.service;
 
-import com.kgc.cn.common.dto.LoginUser;
-import com.kgc.cn.common.vo.UserVo;
+import com.kgc.cn.common.vo.LoginUser;
 
 public interface UserService {
     /**
@@ -9,12 +8,12 @@ public interface UserService {
      * @param userVo
      * @return
      */
-    LoginUser login(UserVo userVo);
+    LoginUser login(LoginUser userVo);
 
     /**
      * 注册
      * @param userVo
      * @return
      */
-    boolean register(UserVo userVo);
+    boolean register(LoginUser userVo);
 }

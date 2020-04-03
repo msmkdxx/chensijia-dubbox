@@ -2,13 +2,11 @@ package com.kgc.cn.consumer.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSONObject;
-import com.kgc.cn.common.dto.LoginUser;
-import com.kgc.cn.common.dto.User;
+import com.kgc.cn.common.vo.LoginUser;
 import com.kgc.cn.common.enums.ErrorEnums;
 import com.kgc.cn.common.exception.ServiceException;
 import com.kgc.cn.common.service.UserService;
 import com.kgc.cn.common.utils.SHAUtils;
-import com.kgc.cn.common.vo.UserVo;
 import com.kgc.cn.consumer.utils.RedisUtils;
 import com.kgc.cn.consumer.utils.ReturnResult;
 import com.kgc.cn.consumer.utils.ReturnResultUtils;
@@ -35,7 +33,7 @@ public class UserController {
 
     @ApiOperation(value = "登录")
     @PostMapping(value = "/login")
-    public ReturnResult login(@Validated UserVo userVo, HttpServletRequest request) {
+    public ReturnResult login(@Validated LoginUser userVo, HttpServletRequest request) {
         //判断前端传的参数是否为空
         if (!ObjectUtils.isEmpty(userVo)) {
             //将前端传的密码加密
@@ -66,7 +64,7 @@ public class UserController {
 
     @ApiOperation(value = "注册")
     @GetMapping(value = "/register")
-    public ReturnResult register(@Validated UserVo userVo) {
+    public ReturnResult register(@Validated LoginUser userVo) {
         boolean isRegister = userService.register(userVo);
         if (isRegister) return ReturnResultUtils.returnSucess();
 

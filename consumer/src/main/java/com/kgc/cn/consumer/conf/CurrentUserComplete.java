@@ -1,6 +1,6 @@
 package com.kgc.cn.consumer.conf;
 
-import com.kgc.cn.common.dto.LoginUser;
+import com.kgc.cn.common.vo.LoginUser;
 import org.springframework.core.MethodParameter;
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.support.WebDataBinderFactory;

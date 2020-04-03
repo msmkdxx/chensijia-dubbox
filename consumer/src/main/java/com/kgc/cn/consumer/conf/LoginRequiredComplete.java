@@ -1,7 +1,7 @@
 package com.kgc.cn.consumer.conf;
 
 import com.alibaba.fastjson.JSONObject;
-import com.kgc.cn.common.dto.LoginUser;
+import com.kgc.cn.common.vo.LoginUser;
 import com.kgc.cn.consumer.utils.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.ObjectUtils;

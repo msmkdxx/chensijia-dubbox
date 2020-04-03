@@ -1,13 +1,11 @@
 package com.kgc.cn.provider.service;
 
-import com.alibaba.dubbo.common.utils.StringUtils;
 import com.alibaba.dubbo.config.annotation.Service;
-import com.kgc.cn.common.dto.LoginUser;
+import com.kgc.cn.common.vo.LoginUser;
 import com.kgc.cn.common.dto.User;
 import com.kgc.cn.common.dto.UserExample;
 import com.kgc.cn.common.service.UserService;
 import com.kgc.cn.common.utils.SHAUtils;
-import com.kgc.cn.common.vo.UserVo;
 import com.kgc.cn.provider.mapper.UserMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeansException;
@@ -21,7 +19,7 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    public LoginUser login(UserVo userVo) {
+    public LoginUser login(LoginUser userVo) {
         UserExample userExample = new UserExample();
         userExample.createCriteria().andNameEqualTo(userVo.getName());
         try {
@@ -44,7 +42,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean register(UserVo userVo) {
+    public boolean register(LoginUser userVo) {
         User user = new User();
         try {
             BeanUtils.copyProperties(userVo, user);
