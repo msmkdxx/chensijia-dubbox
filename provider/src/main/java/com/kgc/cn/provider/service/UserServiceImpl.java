@@ -1,7 +1,6 @@
 package com.kgc.cn.provider.service;
 
 import com.alibaba.dubbo.common.utils.StringUtils;
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.kgc.cn.common.dto.LoginUser;
 import com.kgc.cn.common.dto.User;
@@ -45,8 +44,10 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean register(User user) {
+    public boolean register(UserVo userVo) {
+        User user = new User();
         try {
+            BeanUtils.copyProperties(userVo, user);
             //密码加密
             user.setPassword(SHAUtils.stringSha1(user.getPassword()));
             userMapper.insertSelective(user);

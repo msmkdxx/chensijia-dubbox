@@ -54,7 +54,7 @@ public class UserController {
                     redisUtils.set(token, JSONObject.toJSONString(loginUser));
                 } catch (Exception e) {
                     e.printStackTrace();
-                    return ReturnResultUtils.returnFail(3,"缓存失败！");
+                    return ReturnResultUtils.returnFail(3, "缓存失败！");
                 }
                 return ReturnResultUtils.returnSucess(token);
             }
@@ -66,8 +66,8 @@ public class UserController {
 
     @ApiOperation(value = "注册")
     @GetMapping(value = "/register")
-    public ReturnResult register(@Validated User user) {
-        boolean isRegister = userService.register(user);
+    public ReturnResult register(@Validated UserVo userVo) {
+        boolean isRegister = userService.register(userVo);
         if (isRegister) return ReturnResultUtils.returnSucess();
 
         return ReturnResultUtils.returnFail(1, "注册失败");

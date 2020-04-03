@@ -2,89 +2,106 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f4dd780-7fa6-4847-9276-aa8e9527d9c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/enums/ErrorEnums.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/enums/IErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/exception/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/UserExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/UserExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/UserExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/UserExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/enums/ErrorEnums.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/enums/IErrorCode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/exception/ServiceException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/service/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/ProviderApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/conf/MybatisConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/mapper/BookMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/mapper/BookMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/mapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/service/BookServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/service/TestServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/service/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/provider-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/provider-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_28_2_jre.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_13_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chensijia-dubbox.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chensijia-dubbox.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/dto/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/dto/LoginUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/dto/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/dto/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/dto/UsersExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/dto/UserExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/dto/Wx.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/dto/WxExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/service/UsersService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/vo/UserVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/vo/UserVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/LoginUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/LoginUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/Users.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/UsersExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/UsersExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/UsersExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/UsersExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/Wx.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/WxExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/WxExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/WxExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/WxExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/service/UsersService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/vo/UserVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/vo/UserVo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/common-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/common-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/consumer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/controller/UsersController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/controller/UsersController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/consumer-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/consumer-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/consumer-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/consumer-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/provider.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/mapper/UsersMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/mapper/UsersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/mapper/WxMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/mapper/WxMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/service/UsersServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/dto/UserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/service/TestService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/CommonApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/BookExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/BookExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/BookExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/BookExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/LoginUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/UserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/UserExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/UserExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/UserExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/dto/UserExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/enums/ErrorEnums.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/enums/IErrorCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/exception/ServiceException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/service/TestService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/utils/SHAUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kgc/cn/common/vo/UserVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/common-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/ConsumerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/conf/CurrentUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/conf/CurrentUserComplete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/conf/LoginReqired.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/conf/LoginRequiredComplete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/conf/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/conf/SwaggerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/conf/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/controller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/utils/PageUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/utils/RedisUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/utils/ReturnResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/kgc/cn/consumer/utils/ReturnResultUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/consumer-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/consumer-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/service/TestServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/ProviderApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/conf/MybatisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/mapper/BookMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/mapper/BookMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/service/BookServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/service/TestServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/kgc/cn/provider/service/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/provider-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/provider-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +147,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -209,7 +226,8 @@
       <updated>1585720220813</updated>
       <workItem from="1585720224720" duration="12999000" />
       <workItem from="1585735147989" duration="5631000" />
-      <workItem from="1585786390384" duration="26395000" />
+      <workItem from="1585786390384" duration="27805000" />
+      <workItem from="1585871569206" duration="7005000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1585743714270</created>
@@ -225,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585810963575</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="登录">
+      <created>1585833818262</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585833818262</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +259,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add" />
     <MESSAGE value="集成" />
-    <option name="LAST_COMMIT_MESSAGE" value="集成" />
+    <MESSAGE value="登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Inspections" timestamp="1585728629864">
@@ -257,14 +283,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="450" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1585828580169" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585820913927">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585884476632">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585820913927" />
-    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1585810960163">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585884476632" />
+    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1585833806149">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585810960163" />
+    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585833806149" />
     <state width="407" height="466" key="DebuggerActiveHint" timestamp="1585831583841">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -277,66 +303,70 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="GrepConsoleSettings/0.0.1536.824@0.0.1536.824" timestamp="1585727273947" />
-    <state width="1493" height="273" key="GridCell.Tab.0.bottom" timestamp="1585833568956">
+    <state width="1493" height="202" key="GridCell.Tab.0.bottom" timestamp="1585838766636">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585833568956" />
-    <state width="1493" height="273" key="GridCell.Tab.0.center" timestamp="1585833568955">
+    <state width="1493" height="202" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585838766636" />
+    <state width="1493" height="202" key="GridCell.Tab.0.center" timestamp="1585838766635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585833568955" />
-    <state width="1493" height="273" key="GridCell.Tab.0.left" timestamp="1585833568955">
+    <state width="1493" height="202" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585838766635" />
+    <state width="1493" height="202" key="GridCell.Tab.0.left" timestamp="1585838766635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585833568955" />
-    <state width="1493" height="273" key="GridCell.Tab.0.right" timestamp="1585833568955">
+    <state width="1493" height="202" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585838766635" />
+    <state width="1493" height="202" key="GridCell.Tab.0.right" timestamp="1585838766635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585833568955" />
-    <state width="1493" height="273" key="GridCell.Tab.1.bottom" timestamp="1585833568956">
+    <state width="1493" height="202" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585838766635" />
+    <state width="1493" height="273" key="GridCell.Tab.1.bottom" timestamp="1585838766623">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585833568956" />
-    <state width="1493" height="273" key="GridCell.Tab.1.center" timestamp="1585833568956">
+    <state width="1493" height="273" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585838766623" />
+    <state width="1493" height="273" key="GridCell.Tab.1.center" timestamp="1585838766622">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585833568956" />
-    <state width="1493" height="273" key="GridCell.Tab.1.left" timestamp="1585833568956">
+    <state width="1493" height="273" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585838766622" />
+    <state width="1493" height="273" key="GridCell.Tab.1.left" timestamp="1585838766622">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585833568956" />
-    <state width="1493" height="273" key="GridCell.Tab.1.right" timestamp="1585833568956">
+    <state width="1493" height="273" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585838766622" />
+    <state width="1493" height="273" key="GridCell.Tab.1.right" timestamp="1585838766623">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585833568956" />
-    <state width="1493" height="273" key="GridCell.Tab.2.bottom" timestamp="1585833568958">
+    <state width="1493" height="273" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585838766623" />
+    <state width="1493" height="273" key="GridCell.Tab.2.bottom" timestamp="1585838766623">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585833568958" />
-    <state width="1493" height="273" key="GridCell.Tab.2.center" timestamp="1585833568957">
+    <state width="1493" height="273" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585838766623" />
+    <state width="1493" height="273" key="GridCell.Tab.2.center" timestamp="1585838766623">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1585833568957" />
-    <state width="1493" height="273" key="GridCell.Tab.2.left" timestamp="1585833568957">
+    <state width="1493" height="273" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1585838766623" />
+    <state width="1493" height="273" key="GridCell.Tab.2.left" timestamp="1585838766623">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1585833568957" />
-    <state width="1493" height="273" key="GridCell.Tab.2.right" timestamp="1585833568957">
+    <state width="1493" height="273" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1585838766623" />
+    <state width="1493" height="273" key="GridCell.Tab.2.right" timestamp="1585838766623">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1585833568957" />
-    <state x="270" y="55" key="SettingsEditor" timestamp="1585791400847">
+    <state width="1493" height="273" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1585838766623" />
+    <state x="270" y="55" key="SettingsEditor" timestamp="1585881399734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585791400847" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1585811055141">
+    <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585881399734" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1585833859656">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585811055141" />
-    <state x="668" y="94" width="868" height="596" key="new project wizard" timestamp="1585796470240">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585833859656" />
+    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585880707546">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="668" y="94" width="868" height="596" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1585796470240" />
+    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1585880707546" />
+    <state x="442" y="124" width="868" height="596" key="new project wizard" timestamp="1585879028125">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="442" y="124" width="868" height="596" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1585879028125" />
     <state x="425" y="66" width="670" height="676" key="search.everywhere.popup" timestamp="1585829283615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
