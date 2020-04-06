@@ -70,6 +70,13 @@
             <version>28.2-jre</version>
         </dependency>
         <!-- guava 结束 -->
+        <!-- httpclient 开始 -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.5</version>
+        </dependency>
+        <!-- httpclient 结束 -->
 
     </dependencies>
 

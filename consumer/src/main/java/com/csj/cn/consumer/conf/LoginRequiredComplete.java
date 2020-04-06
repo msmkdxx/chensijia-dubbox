@@ -29,17 +29,26 @@ public class LoginRequiredComplete implements HandlerInterceptor {
         Method method = handlerMethod.getMethod();
         //判断接口是否需要登录
         LoginReqired annotation = method.getAnnotation(LoginReqired.class);
-        if(null!=annotation){
+        if (null != annotation) {
             //从前端请求头获取token
             String token = request.getHeader("token");
-            if(!StringUtils.isEmpty(token)){
+            String wxToken = request.getHeader("wxToken");
+            if (!StringUtils.isEmpty(token)) {
                 //根据前端获取的token去redis中查找是否有value
-                String tokenUser =(String) redisUtils.get(token);
-                if(ObjectUtils.isEmpty(tokenUser)){
+                String tokenUser = (String) redisUtils.get(token);
+                if (ObjectUtils.isEmpty(tokenUser)) {
                     throw new RuntimeException("login error!");
-                }else {
+                } else {
                     LoginUser loginUser = JSONObject.parseObject(tokenUser, LoginUser.class);
-                    request.setAttribute("loginUser",loginUser);
+                    request.setAttribute("loginUser", loginUser);
+                }
+            } else if(!StringUtils.isEmpty(wxToken)){
+                String tokenWx = (String) redisUtils.get(wxToken);
+                if (ObjectUtils.isEmpty(tokenWx)) {
+                    throw new RuntimeException("login error!");
+                } else {
+                    LoginUser loginUser = JSONObject.parseObject(tokenWx, LoginUser.class);
+                    request.setAttribute("loginUser", loginUser);
                 }
             }else {
                 throw new RuntimeException("login error!");

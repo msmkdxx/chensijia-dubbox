@@ -12,19 +12,18 @@ import com.csj.cn.consumer.utils.ReturnResult;
 import com.csj.cn.consumer.utils.ReturnResultUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.ObjectUtils;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
 @Api(tags = "用户")
 @RestController
 @RequestMapping(value = "/user")
+@Log4j
 public class UserController {
     @Reference
     private UserService userService;
@@ -36,25 +35,15 @@ public class UserController {
     public ReturnResult login(@Validated LoginUser userVo, HttpServletRequest request) {
         //判断前端传的参数是否为空
         if (!ObjectUtils.isEmpty(userVo)) {
-            //将前端传的密码加密
-            String pwd = SHAUtils.stringSha1(userVo.getPassword());
             LoginUser loginUser = userService.login(userVo);
-            if (ObjectUtils.isEmpty(loginUser)) {
-                //用户为空异常
-                throw new ServiceException(ErrorEnums.EMPTY_USER_NAME);
-            } else if (!pwd.equals(loginUser.getPassword())) {
-                //密码错误异常
-                throw new ServiceException(ErrorEnums.ERROR_USER_PWD);
-            } else {
-                String token = request.getSession().getId();
-                //将token和用户信息存入缓存
-                try {
-                    redisUtils.set(token, JSONObject.toJSONString(loginUser));
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    return ReturnResultUtils.returnFail(3, "缓存失败！");
-                }
+            String token = request.getSession().getId();
+            //将token和用户信息存入缓存
+            try {
+                redisUtils.set(token, JSONObject.toJSONString(loginUser));
                 return ReturnResultUtils.returnSucess(token);
+            } catch (Exception e) {
+                e.printStackTrace();
+                return ReturnResultUtils.returnFail(3, "缓存失败！");
             }
         } else {
             //参数为空异常
@@ -69,5 +58,17 @@ public class UserController {
         if (isRegister) return ReturnResultUtils.returnSucess();
 
         return ReturnResultUtils.returnFail(1, "注册失败");
+    }
+
+    @ApiOperation(value = "登出", notes = "2表示exit error")
+    @GetMapping(value = "/exit")
+    public ReturnResult exit(@RequestParam String token) {
+        try {
+            redisUtils.del(token);
+            return ReturnResultUtils.returnSucess();
+        } catch (Exception e) {
+            log.error("redis删除" + token + "异常");
+            return ReturnResultUtils.returnFail(2, "exit error");
+        }
     }
 }

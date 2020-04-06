@@ -4,6 +4,6 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@MapperScan(value = "com.kgc.cn.provider.mapper")
+@MapperScan(value = "com.csj.cn.provider.mapper")
 public class MybatisConfig {
 }

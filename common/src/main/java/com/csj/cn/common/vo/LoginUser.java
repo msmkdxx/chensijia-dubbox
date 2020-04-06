@@ -3,7 +3,6 @@ package com.csj.cn.common.vo;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Date;
 
 @Data
 public class LoginUser implements Serializable {
@@ -12,7 +11,13 @@ public class LoginUser implements Serializable {
     private String name;
     private String password;
     private String phone;
-    private String nickname;
+    private Integer sex;
     private Long score;
-    private Date createtime;
+
+    private String openid;
+    private String nickname;
+    private String city;
+    private String province;
+    private String country;
+    private String headimgurl;
 }

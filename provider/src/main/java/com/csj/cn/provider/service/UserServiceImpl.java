@@ -1,6 +1,9 @@
 package com.csj.cn.provider.service;
 
+import com.alibaba.dubbo.common.utils.CollectionUtils;
 import com.alibaba.dubbo.config.annotation.Service;
+import com.csj.cn.common.enums.ErrorEnums;
+import com.csj.cn.common.exception.ServiceException;
 import com.csj.cn.common.vo.LoginUser;
 import com.csj.cn.common.dto.User;
 import com.csj.cn.common.dto.UserExample;
@@ -8,8 +11,8 @@ import com.csj.cn.common.service.UserService;
 import com.csj.cn.common.utils.SHAUtils;
 import com.csj.cn.provider.mapper.UserMapper;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.ObjectUtils;
 
 import java.util.List;
 
@@ -21,24 +24,22 @@ public class UserServiceImpl implements UserService {
     @Override
     public LoginUser login(LoginUser userVo) {
         UserExample userExample = new UserExample();
-        userExample.createCriteria().andNameEqualTo(userVo.getName());
-        try {
-            //通过用户名查找
-            List<User> userList = userMapper.selectByExample(userExample);
-            //判断返回的用户是否为空
-            /*if (StringUtils.isNotEmpty(userList.get(0).getName())) {
-                会出现下标越界
-            }*/
-            if (!userList.isEmpty()) {
+        userExample.createCriteria().andPhoneEqualTo(userVo.getPhone());
+        //将前端传的密码加密
+        String pwd = SHAUtils.stringSha1(userVo.getPassword());
+        //通过用户名查找
+        List<User> userList = userMapper.selectByExample(userExample);
+        User user = userList.get(0);
+        if (!ObjectUtils.isEmpty(user)) {
+            //判断用户名密码是否正确
+            if (user.getPhone().equals(userVo.getPhone()) && user.getPassword().equals(pwd)) {
                 LoginUser loginUser = new LoginUser();
-                BeanUtils.copyProperties(userList.get(0), loginUser);
+                BeanUtils.copyProperties(user, loginUser);
                 return loginUser;
             }
-            return null;
-        } catch (BeansException e) {
-            e.printStackTrace();
+            throw new ServiceException(ErrorEnums.ERROR_USER);
         }
-        return null;
+        throw new ServiceException(ErrorEnums.ERROR_USER);
     }
 
     @Override

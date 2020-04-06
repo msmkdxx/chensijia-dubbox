@@ -26,24 +26,34 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.kgc.cn.common.dto"
+        <javaModelGenerator targetPackage="com.csj.cn.common.dto"
                             targetProject="../common/src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="false"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="com.kgc.cn.provider.mapper"
+        <sqlMapGenerator targetPackage="com.csj.cn.provider.mapper"
                          targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
         <javaClientGenerator type="XMLMAPPER"
-                             targetPackage="com.kgc.cn.provider.mapper"
+                             targetPackage="com.csj.cn.provider.mapper"
                              targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
         <table schema="" tableName="user">
+            <!--默认不使用驼峰 写false才使用-->
+            <property name="useActualColumnNames" value="false"/>
+            <columnOverride column="id" jdbcType="BIGINT" javaType="java.lang.Long"></columnOverride>
+        </table>
+        <table schema="" tableName="wx">
+            <!--默认不使用驼峰 写false才使用-->
+            <property name="useActualColumnNames" value="false"/>
+            <columnOverride column="id" jdbcType="BIGINT" javaType="java.lang.Long"></columnOverride>
+        </table>
+        <table schema="" tableName="wx_and_user">
             <!--默认不使用驼峰 写false才使用-->
             <property name="useActualColumnNames" value="false"/>
             <columnOverride column="id" jdbcType="BIGINT" javaType="java.lang.Long"></columnOverride>
