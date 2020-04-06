@@ -3,13 +3,38 @@
   <component name="ChangeListManager">
     <list default="true" id="4f4dd780-7fa6-4847-9276-aa8e9527d9c3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/dto/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/vo/LoginUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/vo/UserVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/conf/CurrentUserComplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/conf/CurrentUserComplete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/conf/LoginRequiredComplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/conf/LoginRequiredComplete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/CommonApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/CommonApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/dto/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/dto/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/dto/BookExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/dto/BookExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/dto/UserExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/dto/UserExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/enums/ErrorEnums.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/enums/ErrorEnums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/enums/IErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/enums/IErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/exception/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/exception/ServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/utils/SHAUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/utils/SHAUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common/vo/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/vo/LoginUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/ConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/conf/CurrentUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/conf/CurrentUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/conf/CurrentUserComplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/conf/CurrentUserComplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/conf/LoginReqired.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/conf/LoginReqired.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/conf/LoginRequiredComplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/conf/LoginRequiredComplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/conf/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/conf/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/conf/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/conf/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/conf/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/conf/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/utils/PageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/utils/PageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/utils/RedisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/utils/RedisUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/utils/ReturnResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/utils/ReturnResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kgc/cn/consumer/utils/ReturnResultUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/utils/ReturnResultUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/ProviderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/ProviderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/conf/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/conf/MybatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/mapper/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/mapper/BookMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/mapper/BookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/mapper/BookMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/service/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/kgc/cn/provider/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +78,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/src/main/java/com/kgc/cn/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
@@ -76,7 +101,8 @@
   <component name="RunManager" selected="Spring Boot.ConsumerApplication">
     <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="consumer" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kgc.cn.consumer.ConsumerApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.csj.cn.consumer.ConsumerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -99,7 +125,7 @@
     </configuration>
     <configuration name="ProviderApplication " type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="provider" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kgc.cn.provider.ProviderApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.csj.cn.provider.ProviderApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,7 +161,10 @@
       <workItem from="1585720224720" duration="12999000" />
       <workItem from="1585735147989" duration="5631000" />
       <workItem from="1585786390384" duration="27805000" />
-      <workItem from="1585871569206" duration="10440000" />
+      <workItem from="1585871569206" duration="12333000" />
+      <workItem from="1586069293261" duration="1223000" />
+      <workItem from="1586079347551" duration="995000" />
+      <workItem from="1586132997919" duration="822000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1585743714270</created>
@@ -165,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585884646297</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="整理1">
+      <created>1585891118313</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585891118313</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,17 +212,18 @@
     <MESSAGE value="集成" />
     <MESSAGE value="登录" />
     <MESSAGE value="整理" />
-    <option name="LAST_COMMIT_MESSAGE" value="整理" />
+    <MESSAGE value="整理1" />
+    <option name="LAST_COMMIT_MESSAGE" value="整理1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Inspections" timestamp="1585728629864">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1585728629864" />
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585830093866">
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586133830453">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1585830093866" />
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1586133830453" />
     <state x="972" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1585824135741">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -203,78 +240,78 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585884476632" />
-    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1585884642699">
+    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1586133853089">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585884642699" />
+    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586133853089" />
     <state width="407" height="466" key="DebuggerActiveHint" timestamp="1585831583841">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="407" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1585831583841" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1585805648115">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586079381590">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585805648115" />
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586079381590" />
     <state x="361" y="71" key="GrepConsoleSettings" timestamp="1585727273947">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="GrepConsoleSettings/0.0.1536.824@0.0.1536.824" timestamp="1585727273947" />
-    <state width="1493" height="273" key="GridCell.Tab.0.bottom" timestamp="1585891091453">
+    <state width="1493" height="273" key="GridCell.Tab.0.bottom" timestamp="1585892775819">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585891091453" />
-    <state width="1493" height="273" key="GridCell.Tab.0.center" timestamp="1585891091453">
+    <state width="1493" height="273" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585892775819" />
+    <state width="1493" height="273" key="GridCell.Tab.0.center" timestamp="1585892775819">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585891091453" />
-    <state width="1493" height="273" key="GridCell.Tab.0.left" timestamp="1585891091453">
+    <state width="1493" height="273" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585892775819" />
+    <state width="1493" height="273" key="GridCell.Tab.0.left" timestamp="1585892775819">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585891091453" />
-    <state width="1493" height="273" key="GridCell.Tab.0.right" timestamp="1585891091453">
+    <state width="1493" height="273" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585892775819" />
+    <state width="1493" height="273" key="GridCell.Tab.0.right" timestamp="1585892775819">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585891091453" />
-    <state width="1493" height="273" key="GridCell.Tab.1.bottom" timestamp="1585891091454">
+    <state width="1493" height="273" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585892775819" />
+    <state width="1493" height="273" key="GridCell.Tab.1.bottom" timestamp="1585892775820">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585891091454" />
-    <state width="1493" height="273" key="GridCell.Tab.1.center" timestamp="1585891091453">
+    <state width="1493" height="273" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585892775820" />
+    <state width="1493" height="273" key="GridCell.Tab.1.center" timestamp="1585892775819">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585891091453" />
-    <state width="1493" height="273" key="GridCell.Tab.1.left" timestamp="1585891091453">
+    <state width="1493" height="273" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585892775819" />
+    <state width="1493" height="273" key="GridCell.Tab.1.left" timestamp="1585892775819">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585891091453" />
-    <state width="1493" height="273" key="GridCell.Tab.1.right" timestamp="1585891091453">
+    <state width="1493" height="273" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585892775819" />
+    <state width="1493" height="273" key="GridCell.Tab.1.right" timestamp="1585892775820">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585891091453" />
-    <state width="1493" height="273" key="GridCell.Tab.2.bottom" timestamp="1585891091454">
+    <state width="1493" height="273" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585892775820" />
+    <state width="1493" height="273" key="GridCell.Tab.2.bottom" timestamp="1585892775820">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585891091454" />
-    <state width="1493" height="273" key="GridCell.Tab.2.center" timestamp="1585891091454">
+    <state width="1493" height="273" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585892775820" />
+    <state width="1493" height="273" key="GridCell.Tab.2.center" timestamp="1585892775820">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1585891091454" />
-    <state width="1493" height="273" key="GridCell.Tab.2.left" timestamp="1585891091454">
+    <state width="1493" height="273" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1585892775820" />
+    <state width="1493" height="273" key="GridCell.Tab.2.left" timestamp="1585892775820">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1585891091454" />
-    <state width="1493" height="273" key="GridCell.Tab.2.right" timestamp="1585891091454">
+    <state width="1493" height="273" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1585892775820" />
+    <state width="1493" height="273" key="GridCell.Tab.2.right" timestamp="1585892775820">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1585891091454" />
+    <state width="1493" height="273" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1585892775820" />
     <state x="270" y="55" key="SettingsEditor" timestamp="1585881399734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585881399734" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1585833859656">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1585891125423">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585833859656" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585891125423" />
     <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585880707546">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
