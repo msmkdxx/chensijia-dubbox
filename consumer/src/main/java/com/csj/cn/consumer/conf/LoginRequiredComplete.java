@@ -1,11 +1,11 @@
 package com.csj.cn.consumer.conf;
 
+import com.alibaba.dubbo.common.utils.StringUtils;
 import com.alibaba.fastjson.JSONObject;
 import com.csj.cn.common.vo.LoginUser;
 import com.csj.cn.consumer.utils.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.ObjectUtils;
-import org.springframework.util.StringUtils;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -33,21 +33,19 @@ public class LoginRequiredComplete implements HandlerInterceptor {
             //从前端请求头获取token
             String token = request.getHeader("token");
             String wxToken = request.getHeader("wxToken");
-            if (!StringUtils.isEmpty(token)) {
+            String headToken ="";
+            if(StringUtils.isNotEmpty(token)){
+                headToken = token;
+            }else if(StringUtils.isNotEmpty(wxToken)){
+                headToken = wxToken;
+            }
+            if (StringUtils.isNotEmpty(headToken)) {
                 //根据前端获取的token去redis中查找是否有value
-                String tokenUser = (String) redisUtils.get(token);
+                String tokenUser = (String) redisUtils.get(headToken);
                 if (ObjectUtils.isEmpty(tokenUser)) {
                     throw new RuntimeException("login error!");
                 } else {
                     LoginUser loginUser = JSONObject.parseObject(tokenUser, LoginUser.class);
-                    request.setAttribute("loginUser", loginUser);
-                }
-            } else if(!StringUtils.isEmpty(wxToken)){
-                String tokenWx = (String) redisUtils.get(wxToken);
-                if (ObjectUtils.isEmpty(tokenWx)) {
-                    throw new RuntimeException("login error!");
-                } else {
-                    LoginUser loginUser = JSONObject.parseObject(tokenWx, LoginUser.class);
                     request.setAttribute("loginUser", loginUser);
                 }
             }else {

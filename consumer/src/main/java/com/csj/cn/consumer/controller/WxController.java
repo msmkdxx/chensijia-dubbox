@@ -52,8 +52,8 @@ public class WxController {
             loginUser.setPhone("18852077899");
             try {
                 wxService.wxLogin(loginUser);
-                redisUtils.set(accessToken, userInfo);
-                return "redirect:" + wxConfig.getLoginSuccess();
+                redisUtils.set(openId, userInfo);
+                return "redirect:" + wxConfig.getLoginSuccess()+openId;
             } catch (Exception e) {
                 e.printStackTrace();
                 return "redirect:" + wxConfig.getLoginFail();
