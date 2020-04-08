@@ -62,7 +62,7 @@ public class UserController {
         return ReturnResultUtils.returnFail(1, "注册失败");
     }
 
-    @ApiOperation(value = "登出", notes = "2表示exit error")
+    @ApiOperation(value = "退出登录", notes = "2表示exit error")
     @LoginReqired
     @GetMapping(value = "/exit")
     public ReturnResult exit(@RequestParam String token) {

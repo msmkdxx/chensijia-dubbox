@@ -11,6 +11,7 @@ import com.csj.cn.common.vo.GoodsVo;
 import com.csj.cn.provider.mapper.GoodsMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.ObjectUtils;
 
 import java.util.List;
@@ -21,17 +22,10 @@ import java.util.List;
  * @Date 2020/4/711:40
  */
 @Service
+@Transactional
 public class GoodsServiceImpl implements GoodsService {
     @Autowired
     private GoodsMapper goodsMapper;
-
-    @Override
-    public boolean selectCount(Long goodId) {
-        Goods goods = goodsMapper.selectByPrimaryKey(goodId);
-        if (goods.getCount() > 0) return true;
-
-        return false;
-    }
 
     @Override
     public boolean addGoods(GoodsVo goodsVo) {
@@ -47,7 +41,7 @@ public class GoodsServiceImpl implements GoodsService {
     }
 
     @Override
-    public PageUtils<List<Goods>> selectGoods(String searchStr, int pageNo, int pageSize) {
+    public List<Goods> showGoodsList(String searchStr, int pageNo, int pageSize) {
         GoodsExample goodsExample = new GoodsExample();
         PageUtils pageUtils = new PageUtils();
         pageUtils.setCurrentPage(pageNo);
@@ -57,20 +51,12 @@ public class GoodsServiceImpl implements GoodsService {
         goodsExample.setLimit(pageUtils.getPageNo());
         goodsExample.setOffset(pageSize);
         //模糊查询
-        if(StringUtils.isNotEmpty(searchStr)){
+        if (StringUtils.isNotEmpty(searchStr)) {
             goodsExample.createCriteria().andNameLike('%' + searchStr + '%');
         }
-        try {
-            List<Goods> goodsList = goodsMapper.selectByExample(goodsExample);
-            if (CollectionUtils.isNotEmpty(goodsList)) {
-                pageUtils.setCurrentList(goodsList);
-                pageUtils.setTotalCount(goodsMapper.countByExample(goodsExample));
-                return pageUtils;
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
+        List<Goods> goodsList = goodsMapper.selectByExample(goodsExample);
+        pageUtils.setTotalCount(goodsMapper.countByExample(goodsExample));
+        return goodsList;
     }
 
     @Override

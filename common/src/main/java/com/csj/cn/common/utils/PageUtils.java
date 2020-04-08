@@ -9,7 +9,7 @@ import java.util.Collection;
 public class PageUtils<T> implements Serializable {
     private int currentPage;//当前页
     private int pageNo;//页码
-    private int pageSize;//每页多少条
+    private int pageSize = 10;//每页多少条
     private long totalPage;//总页数
     private long totalCount;//总条数
     private Collection<T> currentList;

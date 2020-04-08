@@ -38,12 +38,16 @@ public class OrdersServiceImpl implements OrdersService {
         ordersExample.createCriteria().andGoodIdEqualTo(ordersVo.getGoodId()).andPhoneEqualTo(ordersVo.getPhone());
         List<Orders> ordersList = ordersMapper.selectByExample(ordersExample);
         if (ObjectUtils.isEmpty(ordersList)) {//没有这个订单
-            Orders orders = new Orders();
-            BeanUtils.copyProperties(ordersVo, orders);
-            ordersMapper.insertSelective(orders);
-            //修改库存
-            goodsMapper.reduceCount(1,ordersVo.getGoodId());
-            return true;
+            Goods goods = goodsMapper.selectByPrimaryKey(ordersVo.getGoodId());
+            if (goods.getCount() > 0) {
+                Orders orders = new Orders();
+                BeanUtils.copyProperties(ordersVo, orders);
+                ordersMapper.insertSelective(orders);
+                //修改库存
+                goodsMapper.reduceCount(1, ordersVo.getGoodId());
+                return true;
+            }
+            return false;
         }
         return false;
     }

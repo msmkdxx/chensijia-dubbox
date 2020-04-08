@@ -50,16 +50,16 @@ public class GoodsController {
         throw new ServiceException(ErrorEnums.EMPTY_PARAM);
     }
 
-    @ApiOperation(value = "查询商品")
+    @ApiOperation(value = "返回商品列表")
     @GetMapping(value = "/selectGoods")
-    public PageUtils<List<Goods>> selectGoods(@RequestParam(value = "searchStr",defaultValue = "") String searchStr,
-                                              @RequestParam(value = "pageNo",defaultValue = "1") int pageNo,
-                                              @RequestParam(value = "pageSize",defaultValue = "10") int pageSize) {
-        PageUtils<List<Goods>> listPageUtils = goodsService.selectGoods(searchStr, pageNo, pageSize);
-        if (!ObjectUtils.isEmpty(listPageUtils)) {
-            return listPageUtils;
-        }
-        return null;
+    public PageUtils<List<Goods>> showGoodsList(@RequestParam(value = "searchStr", defaultValue = "") String searchStr,
+                                                @RequestParam(value = "pageNo", defaultValue = "1") int pageNo,
+                                                @RequestParam(value = "pageSize", defaultValue = "10") int pageSize) {
+        List<Goods> goodsList = goodsService.showGoodsList(searchStr, pageNo, pageSize);
+        PageUtils pageUtils = new PageUtils();
+        pageUtils.setCurrentList(goodsList);
+        return pageUtils;
+
     }
 
     @ApiOperation(value = "查询商品详情")

@@ -4,6 +4,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.UUID;
 
 @Data
 public class OrdersVo implements Serializable {
@@ -16,4 +17,11 @@ public class OrdersVo implements Serializable {
     private Integer isPay;
     private Date createddate;
 
+    public String getOrderId() {
+        return UUID.randomUUID().toString();
+    }
+
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
+    }
 }

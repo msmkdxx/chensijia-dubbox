@@ -8,13 +8,8 @@ import java.util.List;
 
 public interface GoodsService {
     /**
-     * 查看商品是否有库存
-     * @param goodId
-     * @return
-     */
-    boolean selectCount(Long goodId);
-    /**
      * 添加商品
+     *
      * @param goodsVo
      * @return
      */
@@ -22,15 +17,17 @@ public interface GoodsService {
 
     /**
      * 查询商品列表
+     *
      * @param searchStr
      * @param pageNo
      * @param pageSize
      * @return
      */
-    PageUtils selectGoods(String searchStr, int pageNo, int pageSize);
+    List<Goods> showGoodsList(String searchStr, int pageNo, int pageSize);
 
     /**
      * 查询商品详情
+     *
      * @param goodId
      * @return
      */

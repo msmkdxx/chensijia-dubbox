@@ -45,23 +45,15 @@ public class OrdersController {
     @ApiOperation(value = "抢购")
     @GetMapping(value = "/timeToBuy")
     public ReturnResult timeToBuy(@RequestParam long goodId, @CurrentUser LoginUser loginUser) {
-        //查看库存是否足够
-        if (goodsService.selectCount(goodId)) {
-            OrdersVo ordersVo = new OrdersVo();
-            ordersVo.setGoodId(goodId);
-            ordersVo.setPhone(loginUser.getPhone());
-            //生成订单号
-            String orderId = UUID.randomUUID().toString();
-            ordersVo.setOrderId(orderId);
-            if (ordersService.timeToBuy(ordersVo)) {
-                redisUtils.set(ordersVo.getOrderId(), ordersVo);
-                redisUtils.expire(ordersVo.getOrderId(), 20);
-                return ReturnResultUtils.returnSucess();
-            } else {
-                return ReturnResultUtils.returnFail(12, "您已抢购，不能再抢购了");
-            }
+        OrdersVo ordersVo = new OrdersVo();
+        ordersVo.setGoodId(goodId);
+        ordersVo.setPhone(loginUser.getPhone());
+        if (ordersService.timeToBuy(ordersVo)) {
+            redisUtils.set(ordersVo.getOrderId(), ordersVo);
+            redisUtils.expire(ordersVo.getOrderId(), 20);
+            return ReturnResultUtils.returnSucess();
         } else {
-            return ReturnResultUtils.returnFail(11, "没有库存了");
+            return ReturnResultUtils.returnFail(12, "您已抢购，不能再抢购了");
         }
     }
 }
