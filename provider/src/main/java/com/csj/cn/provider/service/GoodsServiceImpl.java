@@ -1,6 +1,7 @@
 package com.csj.cn.provider.service;
 
 import com.alibaba.dubbo.common.utils.CollectionUtils;
+import com.alibaba.dubbo.common.utils.StringUtils;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.csj.cn.common.dto.Goods;
 import com.csj.cn.common.dto.GoodsExample;
@@ -56,7 +57,9 @@ public class GoodsServiceImpl implements GoodsService {
         goodsExample.setLimit(pageUtils.getPageNo());
         goodsExample.setOffset(pageSize);
         //模糊查询
-        goodsExample.createCriteria().andNameLike('%' + searchStr + '%');
+        if(StringUtils.isNotEmpty(searchStr)){
+            goodsExample.createCriteria().andNameLike('%' + searchStr + '%');
+        }
         try {
             List<Goods> goodsList = goodsMapper.selectByExample(goodsExample);
             if (CollectionUtils.isNotEmpty(goodsList)) {

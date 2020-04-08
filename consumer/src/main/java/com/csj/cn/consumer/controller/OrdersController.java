@@ -58,7 +58,7 @@ public class OrdersController {
                 redisUtils.expire(ordersVo.getOrderId(), 20);
                 return ReturnResultUtils.returnSucess();
             } else {
-                return ReturnResultUtils.returnFail(12, "抢购失败");
+                return ReturnResultUtils.returnFail(12, "您已抢购，不能再抢购了");
             }
         } else {
             return ReturnResultUtils.returnFail(11, "没有库存了");

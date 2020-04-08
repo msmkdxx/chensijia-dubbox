@@ -52,9 +52,9 @@ public class GoodsController {
 
     @ApiOperation(value = "查询商品")
     @GetMapping(value = "/selectGoods")
-    public PageUtils<List<Goods>> selectGoods(@RequestParam(value = "searchStr") String searchStr,
-                                              @RequestParam(value = "pageNo") int pageNo,
-                                              @RequestParam(value = "pageSize") int pageSize) {
+    public PageUtils<List<Goods>> selectGoods(@RequestParam(value = "searchStr",defaultValue = "") String searchStr,
+                                              @RequestParam(value = "pageNo",defaultValue = "1") int pageNo,
+                                              @RequestParam(value = "pageSize",defaultValue = "10") int pageSize) {
         PageUtils<List<Goods>> listPageUtils = goodsService.selectGoods(searchStr, pageNo, pageSize);
         if (!ObjectUtils.isEmpty(listPageUtils)) {
             return listPageUtils;
