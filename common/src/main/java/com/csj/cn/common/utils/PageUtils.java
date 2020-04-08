@@ -2,14 +2,15 @@ package com.csj.cn.common.utils;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Collection;
 
 @Data
-public class PageUtils<T> {
+public class PageUtils<T> implements Serializable {
     private int currentPage;//当前页
     private int pageNo;//页码
-    private int pageSize;//每页多少条
-    private long totalPage = 0l;//总页数
+    private int pageSize = 10;//每页多少条
+    private long totalPage;//总页数
     private long totalCount;//总条数
     private Collection<T> currentList;
 

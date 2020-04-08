@@ -2,45 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f4dd780-7fa6-4847-9276-aa8e9527d9c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/dto/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/dto/GoodsExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/dto/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/dto/OrdersExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/service/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/service/OrdersService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/vo/GoodsVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/vo/OrdersVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/controller/GoodsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/controller/OrdersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/mapper/GoodsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/mapper/GoodsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/mapper/OrdersMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/mapper/OrdersMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/service/GoodsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/service/OrdersServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/utils/PageUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/vo/GoodsVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/common-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/classes/com/csj/cn/consumer/controller/GoodsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/consumer-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/consumer-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/provider-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/provider-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/UserExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/UserExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/UserExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/UserExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/UserExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/UserExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/Wx.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/Wx.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/WxExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/WxExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/WxExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/WxExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/WxExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/WxExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/vo/LoginUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/vo/LoginUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/conf/LoginRequiredComplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/conf/LoginRequiredComplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/utils/PageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/utils/PageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/META-INF/common.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/Goods.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/Goods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/GoodsExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/GoodsExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/GoodsExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/GoodsExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/GoodsExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/GoodsExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/GoodsExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/dto/GoodsExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/service/GoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/service/GoodsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/service/OrdersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/service/OrdersService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/controller/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/controller/OrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/controller/WxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/controller/WxController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/utils/PageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/utils/PageUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/META-INF/consumer.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/csj/cn/consumer/conf/LoginRequiredComplete.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/classes/com/csj/cn/consumer/conf/LoginRequiredComplete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/csj/cn/consumer/controller/OrdersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/classes/com/csj/cn/consumer/controller/OrdersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/csj/cn/consumer/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/classes/com/csj/cn/consumer/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/csj/cn/consumer/controller/WxController.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/classes/com/csj/cn/consumer/controller/WxController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/mapper/WxMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/mapper/WxMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/csj/cn/consumer/utils/PageUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/mapper/GoodsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/mapper/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/service/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/service/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/service/OrdersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/service/OrdersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/csj/cn/provider/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/META-INF/provider.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/mapper/GoodsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/mapper/GoodsMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/mapper/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/service/GoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/service/GoodsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/service/OrdersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/service/OrdersServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/service/WxServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/csj/cn/provider/service/WxServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/generatorConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +101,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
@@ -98,14 +114,14 @@
       <recent name="com.kgc.cn.common.utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\chensijia-dubbox" />
       <recent name="D:\IdeaProjects\chensijia-dubbox\common\src\main\java\com\csj\cn\common\utils" />
       <recent name="D:\IdeaProjects\chensijia-dubbox\common\src\main\java\com\kgc\cn\common" />
       <recent name="D:\IdeaProjects\chensijia-dubbox\common\src\main\java\com\kgc\cn\common\dto" />
       <recent name="D:\IdeaProjects\chensijia-dubbox\consumer\src\main\resources" />
-      <recent name="D:\IdeaProjects\chensijia-dubbox\provider\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConsumerApplication">
+  <component name="RunManager" selected="Spring Boot.ProviderApplication ">
     <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="consumer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.csj.cn.consumer.ConsumerApplication" />
@@ -173,7 +189,8 @@
       <workItem from="1586079347551" duration="995000" />
       <workItem from="1586132997919" duration="35481000" />
       <workItem from="1586219594821" duration="19482000" />
-      <workItem from="1586258395294" duration="1102000" />
+      <workItem from="1586258395294" duration="5262000" />
+      <workItem from="1586306024595" duration="13232000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1585743714270</created>
@@ -224,7 +241,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586181259550</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="抢购">
+      <created>1586260836327</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586260836327</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add sql">
+      <created>1586260958916</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586260958916</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +270,9 @@
     <MESSAGE value="整理1" />
     <MESSAGE value="update" />
     <MESSAGE value="微信登录" />
-    <option name="LAST_COMMIT_MESSAGE" value="微信登录" />
+    <MESSAGE value="抢购" />
+    <MESSAGE value="add sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sql" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Inspections" timestamp="1585728629864">
@@ -250,10 +283,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1586133830453" />
-    <state x="972" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1586249146859">
+    <state x="972" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1586272910253">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="972" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586249146859" />
+    <state x="972" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586272910253" />
     <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585798260935">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -266,10 +299,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586248794863" />
-    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1586181257690">
+    <state x="518" y="118" key="#xdebugger.evaluate" timestamp="1586316065042">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586181257690" />
+    <state x="518" y="118" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1586316065042" />
+    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1586260954101">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586260954101" />
     <state width="446" height="466" key="DebuggerActiveHint" timestamp="1586154738072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -282,62 +319,66 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="GrepConsoleSettings/0.0.1536.824@0.0.1536.824" timestamp="1585727273947" />
-    <state width="1493" height="250" key="GridCell.Tab.0.bottom" timestamp="1586237976009">
+    <state width="1493" height="256" key="GridCell.Tab.0.bottom" timestamp="1586319048931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586237976009" />
-    <state width="1493" height="250" key="GridCell.Tab.0.center" timestamp="1586237976009">
+    <state width="1493" height="256" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586319048931" />
+    <state width="1493" height="256" key="GridCell.Tab.0.center" timestamp="1586319048931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586237976009" />
-    <state width="1493" height="250" key="GridCell.Tab.0.left" timestamp="1586237976009">
+    <state width="1493" height="256" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586319048931" />
+    <state width="1493" height="256" key="GridCell.Tab.0.left" timestamp="1586319048931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586237976009" />
-    <state width="1493" height="250" key="GridCell.Tab.0.right" timestamp="1586237976009">
+    <state width="1493" height="256" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586319048931" />
+    <state width="1493" height="256" key="GridCell.Tab.0.right" timestamp="1586319048931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586237976009" />
-    <state width="1493" height="250" key="GridCell.Tab.1.bottom" timestamp="1586237976009">
+    <state width="1493" height="256" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586319048931" />
+    <state width="1493" height="256" key="GridCell.Tab.1.bottom" timestamp="1586319048931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586237976009" />
-    <state width="1493" height="250" key="GridCell.Tab.1.center" timestamp="1586237976009">
+    <state width="1493" height="256" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586319048931" />
+    <state width="1493" height="256" key="GridCell.Tab.1.center" timestamp="1586319048931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586237976009" />
-    <state width="1493" height="250" key="GridCell.Tab.1.left" timestamp="1586237976009">
+    <state width="1493" height="256" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586319048931" />
+    <state width="1493" height="256" key="GridCell.Tab.1.left" timestamp="1586319048931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586237976009" />
-    <state width="1493" height="250" key="GridCell.Tab.1.right" timestamp="1586237976009">
+    <state width="1493" height="256" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586319048931" />
+    <state width="1493" height="256" key="GridCell.Tab.1.right" timestamp="1586319048931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586237976009" />
-    <state width="1493" height="250" key="GridCell.Tab.2.bottom" timestamp="1586237976010">
+    <state width="1493" height="256" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586319048931" />
+    <state width="1493" height="256" key="GridCell.Tab.2.bottom" timestamp="1586319048932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586237976010" />
-    <state width="1493" height="250" key="GridCell.Tab.2.center" timestamp="1586237976010">
+    <state width="1493" height="256" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586319048932" />
+    <state width="1493" height="256" key="GridCell.Tab.2.center" timestamp="1586319048931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1586237976010" />
-    <state width="1493" height="250" key="GridCell.Tab.2.left" timestamp="1586237976009">
+    <state width="1493" height="256" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1586319048931" />
+    <state width="1493" height="256" key="GridCell.Tab.2.left" timestamp="1586319048931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1586237976009" />
-    <state width="1493" height="250" key="GridCell.Tab.2.right" timestamp="1586237976010">
+    <state width="1493" height="256" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1586319048931" />
+    <state width="1493" height="256" key="GridCell.Tab.2.right" timestamp="1586319048932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1586237976010" />
+    <state width="1493" height="256" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1586319048932" />
     <state x="270" y="55" key="SettingsEditor" timestamp="1585881399734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585881399734" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586181269250">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586260969654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586181269250" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586260969654" />
+    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1586312970140">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1586312970140" />
     <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585880707546">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -346,9 +387,20 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="442" y="124" width="868" height="596" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1585879028125" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1586312336687">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1586312336687" />
     <state x="425" y="66" width="670" height="676" key="search.everywhere.popup" timestamp="1585829283615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="66" width="670" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585829283615" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="pageSize" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

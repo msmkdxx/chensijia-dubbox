@@ -5,13 +5,16 @@ import com.csj.cn.common.vo.LoginUser;
 public interface UserService {
     /**
      * 登录
-     * @param userVo
+     *
+     * @param phone
+     * @param password
      * @return
      */
-    LoginUser login(LoginUser userVo);
+    LoginUser login(String phone, String password);
 
     /**
      * 注册
+     *
      * @param userVo
      * @return
      */

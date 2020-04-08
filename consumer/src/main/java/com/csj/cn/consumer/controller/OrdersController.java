@@ -20,7 +20,10 @@ import org.springframework.util.ObjectUtils;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.UUID;
 
 /**
  * @Description TODO
@@ -41,25 +44,24 @@ public class OrdersController {
     @LoginReqired
     @ApiOperation(value = "抢购")
     @GetMapping(value = "/timeToBuy")
-    public ReturnResult timeToBuy(@Validated OrdersVo ordersVo, @CurrentUser LoginUser loginUser) {
-        if (!ObjectUtils.isEmpty(loginUser)) {
+    public ReturnResult timeToBuy(@RequestParam long goodId, @CurrentUser LoginUser loginUser) {
+        //查看库存是否足够
+        if (goodsService.selectCount(goodId)) {
+            OrdersVo ordersVo = new OrdersVo();
+            ordersVo.setGoodId(goodId);
             ordersVo.setPhone(loginUser.getPhone());
-            //查看库存是否足够
-            if (goodsService.selectCount(ordersVo.getGoodId())) {
-                //生成订单号
-                String str = ordersVo.getPhone() + ordersVo.getGoodId();
-                ordersVo.setOrderId(str);
-                if (ordersService.timeToBuy(ordersVo)) {
-                    redisUtils.set(ordersVo.getOrderId(), ordersVo);
-                    redisUtils.expire(ordersVo.getOrderId(), 20);
-                    return ReturnResultUtils.returnSucess();
-                } else {
-                    return ReturnResultUtils.returnFail(12, "抢购失败");
-                }
+            //生成订单号
+            String orderId = UUID.randomUUID().toString();
+            ordersVo.setOrderId(orderId);
+            if (ordersService.timeToBuy(ordersVo)) {
+                redisUtils.set(ordersVo.getOrderId(), ordersVo);
+                redisUtils.expire(ordersVo.getOrderId(), 20);
+                return ReturnResultUtils.returnSucess();
             } else {
-                return ReturnResultUtils.returnFail(11, "没有库存了");
+                return ReturnResultUtils.returnFail(12, "抢购失败");
             }
+        } else {
+            return ReturnResultUtils.returnFail(11, "没有库存了");
         }
-        throw new ServiceException(ErrorEnums.EMPTY_PARAM);
     }
 }

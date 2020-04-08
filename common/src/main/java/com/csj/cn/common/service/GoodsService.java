@@ -27,6 +27,13 @@ public interface GoodsService {
      * @param pageSize
      * @return
      */
-    PageUtils<List<Goods>> selectGoods(String searchStr, int pageNo, int pageSize);
+    PageUtils selectGoods(String searchStr, int pageNo, int pageSize);
+
+    /**
+     * 查询商品详情
+     * @param goodId
+     * @return
+     */
+    Goods selectByPrimaryKey(Long goodId);
 
 }

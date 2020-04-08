@@ -98,9 +98,10 @@ public interface GoodsMapper {
 
     /**
      * 减少库存
-     * @param num
+     *
+     * @param reduceNum
      * @param goodId
      * @return
      */
-    int reduceCount(int num, long goodId);
+    int reduceCount(@Param("reduceNum") int reduceNum, @Param("goodId") long goodId);
 }

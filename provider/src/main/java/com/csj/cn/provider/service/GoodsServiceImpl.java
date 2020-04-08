@@ -50,12 +50,13 @@ public class GoodsServiceImpl implements GoodsService {
         GoodsExample goodsExample = new GoodsExample();
         PageUtils pageUtils = new PageUtils();
         pageUtils.setCurrentPage(pageNo);
+        pageUtils.setPageSize(pageSize);
         //将pageNo转为limit
         pageUtils.setPageNo(pageNo);
         goodsExample.setLimit(pageUtils.getPageNo());
         goodsExample.setOffset(pageSize);
         //模糊查询
-        goodsExample.createCriteria().andNameLike(searchStr);
+        goodsExample.createCriteria().andNameLike('%' + searchStr + '%');
         try {
             List<Goods> goodsList = goodsMapper.selectByExample(goodsExample);
             if (CollectionUtils.isNotEmpty(goodsList)) {
@@ -63,6 +64,16 @@ public class GoodsServiceImpl implements GoodsService {
                 pageUtils.setTotalCount(goodsMapper.countByExample(goodsExample));
                 return pageUtils;
             }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public Goods selectByPrimaryKey(Long goodId) {
+        try {
+            return goodsMapper.selectByPrimaryKey(goodId);
         } catch (Exception e) {
             e.printStackTrace();
         }

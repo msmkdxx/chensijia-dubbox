@@ -1,0 +1,16 @@
+com\csj\cn\consumer\conf\LoginReqired.class
+com\csj\cn\consumer\conf\SwaggerConfig.class
+com\csj\cn\consumer\wx\WxConfig.class
+com\csj\cn\consumer\conf\WebConfig.class
+com\csj\cn\consumer\conf\LoginRequiredComplete.class
+com\csj\cn\consumer\utils\ReturnResult.class
+com\csj\cn\consumer\controller\OrdersController.class
+com\csj\cn\consumer\controller\UserController.class
+com\csj\cn\consumer\conf\RedisConfig.class
+com\csj\cn\consumer\controller\WxController.class
+com\csj\cn\consumer\controller\GoodsController.class
+com\csj\cn\consumer\conf\CurrentUserComplete.class
+com\csj\cn\consumer\utils\RedisUtils.class
+com\csj\cn\consumer\ConsumerApplication.class
+com\csj\cn\consumer\conf\CurrentUser.class
+com\csj\cn\consumer\utils\ReturnResultUtils.class

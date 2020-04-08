@@ -40,8 +40,6 @@ public class OrdersServiceImpl implements OrdersService {
         if (ObjectUtils.isEmpty(ordersList)) {//没有这个订单
             Orders orders = new Orders();
             BeanUtils.copyProperties(ordersVo, orders);
-            //设置订单状态
-            orders.setState(1);
             ordersMapper.insertSelective(orders);
             //修改库存
             goodsMapper.reduceCount(1,ordersVo.getGoodId());

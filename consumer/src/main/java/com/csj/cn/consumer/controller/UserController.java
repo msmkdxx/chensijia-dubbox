@@ -1,5 +1,6 @@
 package com.csj.cn.consumer.controller;
 
+import com.alibaba.dubbo.common.utils.StringUtils;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSONObject;
 import com.csj.cn.common.vo.LoginUser;
@@ -7,6 +8,7 @@ import com.csj.cn.common.enums.ErrorEnums;
 import com.csj.cn.common.exception.ServiceException;
 import com.csj.cn.common.service.UserService;
 import com.csj.cn.common.utils.SHAUtils;
+import com.csj.cn.consumer.conf.LoginReqired;
 import com.csj.cn.consumer.utils.RedisUtils;
 import com.csj.cn.consumer.utils.ReturnResult;
 import com.csj.cn.consumer.utils.ReturnResultUtils;
@@ -32,10 +34,10 @@ public class UserController {
 
     @ApiOperation(value = "登录")
     @PostMapping(value = "/login")
-    public ReturnResult login(@Validated LoginUser userVo, HttpServletRequest request) {
+    public ReturnResult login(@RequestParam String phone, @RequestParam String password, HttpServletRequest request) {
         //判断前端传的参数是否为空
-        if (!ObjectUtils.isEmpty(userVo)) {
-            LoginUser loginUser = userService.login(userVo);
+        if (StringUtils.isNotEmpty(phone) && StringUtils.isNotEmpty(password)) {
+            LoginUser loginUser = userService.login(phone, password);
             String token = request.getSession().getId();
             //将token和用户信息存入缓存
             try {
@@ -61,6 +63,7 @@ public class UserController {
     }
 
     @ApiOperation(value = "登出", notes = "2表示exit error")
+    @LoginReqired
     @GetMapping(value = "/exit")
     public ReturnResult exit(@RequestParam String token) {
         try {

@@ -9,6 +9,8 @@ import com.csj.cn.consumer.utils.RedisUtils;
 import com.csj.cn.consumer.utils.ReturnResult;
 import com.csj.cn.consumer.utils.ReturnResultUtils;
 import com.csj.cn.consumer.wx.WxConfig;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +24,7 @@ import java.io.IOException;
  * @Author chensijia
  * @Date 2020/4/611:05
  */
+@Api(tags = "微信")
 @Controller
 @RequestMapping(value = "/wx")
 public class WxController {
@@ -33,6 +36,7 @@ public class WxController {
     private RedisUtils redisUtils;
 
     //https://d4e8e82e.ngrok.io/wx/wxLogin
+    @ApiOperation(value = "微信登录")
     @GetMapping(value = "/wxLogin")
     public String wxLogin() {
         String codeUri = wxConfig.reqCodeUri();

@@ -22,17 +22,17 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    public LoginUser login(LoginUser userVo) {
+    public LoginUser login(String phone, String password) {
         UserExample userExample = new UserExample();
-        userExample.createCriteria().andPhoneEqualTo(userVo.getPhone());
+        userExample.createCriteria().andPhoneEqualTo(phone);
         //将前端传的密码加密
-        String pwd = SHAUtils.stringSha1(userVo.getPassword());
+        String pwd = SHAUtils.stringSha1(password);
         //通过用户名查找
         List<User> userList = userMapper.selectByExample(userExample);
         User user = userList.get(0);
         if (!ObjectUtils.isEmpty(user)) {
             //判断用户名密码是否正确
-            if (user.getPhone().equals(userVo.getPhone()) && user.getPassword().equals(pwd)) {
+            if (user.getPhone().equals(phone) && user.getPassword().equals(pwd)) {
                 LoginUser loginUser = new LoginUser();
                 BeanUtils.copyProperties(user, loginUser);
                 return loginUser;
