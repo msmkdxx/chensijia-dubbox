@@ -12,4 +12,12 @@ public interface OrdersService {
      */
     boolean timeToBuy(OrdersVo ordersVo);
 
+    /**
+     * 生成订单
+     *
+     * @param ordersVo
+     * @return
+     */
+    void createOrders(OrdersVo ordersVo);
+
 }

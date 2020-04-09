@@ -33,6 +33,12 @@
             <scope>provided</scope>
         </dependency>
         <!-- lombok 结束 -->
+        <!-- spring-boot-starter-activemq 开始 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-activemq</artifactId>
+        </dependency>
+        <!-- spring-boot-starter-activemq 结束 -->
     </dependencies>
 
     <build>

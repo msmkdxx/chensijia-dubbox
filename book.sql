@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50045
 File Encoding         : 65001
 
-Date: 2020-04-07 20:01:37
+Date: 2020-04-09 18:43:38
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -275,27 +275,29 @@ CREATE TABLE `goods` (
   `content` varchar(100) default NULL COMMENT '商品描述',
   `count` int(11) default NULL,
   PRIMARY KEY  (`good_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of goods
 -- ----------------------------
-INSERT INTO `goods` VALUES ('1', 'Advanced SystemCare 12 Ultimate 清理杀毒软件', '129', '全新的反病毒引擎，超敏感的检测和删除最新的病毒，木马软件，间谍软件', '11');
-INSERT INTO `goods` VALUES ('2', 'Advanced SystemCare 13 Pro 清理优化工具', '149', '一键清理优化和修复、深度您的PC，清理Windows注册表、自动在线反浏览器跟踪保护隐私，提升电脑速度高达200％。', '11');
-INSERT INTO `goods` VALUES ('3', 'AMC Security 手机管家- 清理', '99', '加速、安全', '12');
-INSERT INTO `goods` VALUES ('4', 'Ashampoo Burning Studio 20 刻录软件 许可证', '50', '许可证', '12');
+INSERT INTO `goods` VALUES ('1', 'Advanced SystemCare 12 Ultimate 清理杀毒软件', '129', '全新的反病毒引擎，超敏感的检测和删除最新的病毒，木马软件，间谍软件', '10');
+INSERT INTO `goods` VALUES ('2', 'Advanced SystemCare 13 Pro 清理优化工具', '149', '一键清理优化和修复、深度您的PC，清理Windows注册表、自动在线反浏览器跟踪保护隐私，提升电脑速度高达200％。', '10');
+INSERT INTO `goods` VALUES ('3', 'AMC Security 手机管家- 清理', '99', '加速、安全', '10');
+INSERT INTO `goods` VALUES ('4', 'Ashampoo Burning Studio 20 刻录软件 许可证', '50', '许可证', '11');
 INSERT INTO `goods` VALUES ('5', 'Avast Business Antivirus Pro Plus 商业专业增强版 企业全面保护', '379', '防护软件', '12');
-INSERT INTO `goods` VALUES ('6', 'Avast Business Antivirus Pro Plus 商业专业增强版 企业全面保护', '254', '许可证', '12');
+INSERT INTO `goods` VALUES ('6', 'Avast Business Antivirus Pro Plus 商业专业增强版 企业全面保护', '254', '许可证', '11');
 INSERT INTO `goods` VALUES ('7', 'Avast Business Antivirus Pro 商业专业版 企业杀毒软件', '216', '许可证', '12');
 INSERT INTO `goods` VALUES ('8', 'Avast Business Antivirus 商业版 小型企业防病毒软件', '230', '许可证', '12');
-INSERT INTO `goods` VALUES ('9', 'Avast Premier 杀毒软件 高级版 激活码', '99', '许可证', '12');
+INSERT INTO `goods` VALUES ('9', 'Avast Premier 杀毒软件 高级版 激活码', '99', '许可证', '11');
+INSERT INTO `goods` VALUES ('10', '手机', '6000', '手机的描述', '12');
+INSERT INTO `goods` VALUES ('11', '华为手机', '6000', '手机的描述', '4');
 
 -- ----------------------------
 -- Table structure for orders
 -- ----------------------------
 DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders` (
-  `order_id` varchar(20) NOT NULL COMMENT '订单号',
+  `order_id` varchar(40) NOT NULL COMMENT '订单号',
   `num` double default NULL COMMENT '商品总价',
   `phone` varchar(11) NOT NULL,
   `good_id` bigint(8) NOT NULL,
@@ -308,14 +310,14 @@ CREATE TABLE `orders` (
 -- ----------------------------
 -- Records of orders
 -- ----------------------------
-INSERT INTO `orders` VALUES ('188520727891', null, '18852072789', '1', '1', null, null);
-INSERT INTO `orders` VALUES ('188520727892', null, '18852072789', '2', '1', null, null);
-INSERT INTO `orders` VALUES ('199701317080', '272', '', '1', '0', null, '2020-03-02 20:01:31');
-INSERT INTO `orders` VALUES ('199703389321', '272', '', '2', '0', null, '2020-03-02 20:03:38');
-INSERT INTO `orders` VALUES ('199717199457', '272', '', '1', '0', null, '2020-02-28 00:00:00');
-INSERT INTO `orders` VALUES ('199729575180', '272', '', '1', '0', null, '2020-03-02 19:29:57');
-INSERT INTO `orders` VALUES ('199746556214', '272', '', '1', '0', null, '2020-03-02 19:46:55');
-INSERT INTO `orders` VALUES ('199747473781', '272', '', '1', '0', null, '2020-03-02 19:47:52');
+INSERT INTO `orders` VALUES ('10af3c1c-d6cf-477f-a773-104885865149', null, '18852072789', '9', '0', null, null);
+INSERT INTO `orders` VALUES ('1296b6832-8e2a-492c-ac6c-4053ec77b076', null, '18852072789', '10', '0', null, null);
+INSERT INTO `orders` VALUES ('152cfcaea-3962-41c2-b353-6ab617169799', null, '18852072789', '1', '0', null, null);
+INSERT INTO `orders` VALUES ('15faf6c69-a55e-4114-a314-d9dd02a36eb2', null, '18852072789', '11', '0', null, null);
+INSERT INTO `orders` VALUES ('1f06322ed-58ed-41b9-b8d9-7b9ec0cc6908', null, '18852072789', '2', '0', null, null);
+INSERT INTO `orders` VALUES ('519f72f9-960f-4193-a153-c49701a37af1', null, '18852072789', '4', '0', null, null);
+INSERT INTO `orders` VALUES ('96a27159-0969-439d-95ec-76aae3da390d', null, '18852072789', '3', '0', null, null);
+INSERT INTO `orders` VALUES ('b81a7638-6215-4c52-a641-df3b52b3c51e', null, '18852072789', '6', '0', null, null);
 
 -- ----------------------------
 -- Table structure for role
