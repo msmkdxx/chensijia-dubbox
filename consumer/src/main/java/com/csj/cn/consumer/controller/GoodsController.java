@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Description TODO
@@ -52,12 +53,16 @@ public class GoodsController {
 
     @ApiOperation(value = "返回商品列表")
     @GetMapping(value = "/selectGoods")
-    public PageUtils<List<Goods>> showGoodsList(@RequestParam(value = "searchStr", defaultValue = "") String searchStr,
-                                                @RequestParam(value = "pageNo", defaultValue = "1") int pageNo,
-                                                @RequestParam(value = "pageSize", defaultValue = "10") int pageSize) {
-        List<Goods> goodsList = goodsService.showGoodsList(searchStr, pageNo, pageSize);
+    public PageUtils<List<Goods>> showGoodsList(@RequestParam(name = "searchStr", required = false, defaultValue = "") String searchStr,
+                                                @RequestParam(name = "pageNo", required = true) int pageNo,
+                                                @RequestParam(name = "pageSize", required = true) int pageSize) {
         PageUtils pageUtils = new PageUtils();
-        pageUtils.setCurrentList(goodsList);
+        pageUtils.setPageNo(pageNo);
+        pageUtils.setCurrentPage(pageNo);
+        pageUtils.setPageSize(pageSize);
+        Map goodsListMap = goodsService.showGoodsListMap(searchStr, pageUtils.getPageNo(), pageSize);
+        pageUtils.setCurrentList((List<Goods>) goodsListMap.get("currentList"));
+        pageUtils.setTotalCount((Long) goodsListMap.get("totalCount"));
         return pageUtils;
 
     }

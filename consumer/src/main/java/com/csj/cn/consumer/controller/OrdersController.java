@@ -46,6 +46,8 @@ public class OrdersController {
     @GetMapping(value = "/timeToBuy")
     public ReturnResult timeToBuy(@RequestParam long goodId, @CurrentUser LoginUser loginUser) {
         OrdersVo ordersVo = new OrdersVo();
+        String orderId = loginUser.getId()+""+ UUID.randomUUID();
+        ordersVo.setOrderId(orderId);
         ordersVo.setGoodId(goodId);
         ordersVo.setPhone(loginUser.getPhone());
         if (ordersService.timeToBuy(ordersVo)) {

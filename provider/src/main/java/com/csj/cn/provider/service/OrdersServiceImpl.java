@@ -33,13 +33,13 @@ public class OrdersServiceImpl implements OrdersService {
 
     @Override
     public boolean timeToBuy(OrdersVo ordersVo) {
-        //查询该用户的订单中是否有该商品订单
-        OrdersExample ordersExample = new OrdersExample();
-        ordersExample.createCriteria().andGoodIdEqualTo(ordersVo.getGoodId()).andPhoneEqualTo(ordersVo.getPhone());
-        List<Orders> ordersList = ordersMapper.selectByExample(ordersExample);
-        if (ObjectUtils.isEmpty(ordersList)) {//没有这个订单
-            Goods goods = goodsMapper.selectByPrimaryKey(ordersVo.getGoodId());
-            if (goods.getCount() > 0) {
+        Goods goods = goodsMapper.selectByPrimaryKey(ordersVo.getGoodId());
+        if (goods.getCount() > 0) {
+            //查询该用户的订单中是否有该商品订单
+            OrdersExample ordersExample = new OrdersExample();
+            ordersExample.createCriteria().andGoodIdEqualTo(ordersVo.getGoodId()).andPhoneEqualTo(ordersVo.getPhone());
+            List<Orders> ordersList = ordersMapper.selectByExample(ordersExample);
+            if (ObjectUtils.isEmpty(ordersList)) {//没有这个订单
                 Orders orders = new Orders();
                 BeanUtils.copyProperties(ordersVo, orders);
                 ordersMapper.insertSelective(orders);

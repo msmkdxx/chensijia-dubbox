@@ -9,12 +9,14 @@ import com.csj.cn.common.service.GoodsService;
 import com.csj.cn.common.utils.PageUtils;
 import com.csj.cn.common.vo.GoodsVo;
 import com.csj.cn.provider.mapper.GoodsMapper;
+import com.google.common.collect.Maps;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.ObjectUtils;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Description TODO
@@ -43,20 +45,31 @@ public class GoodsServiceImpl implements GoodsService {
     @Override
     public List<Goods> showGoodsList(String searchStr, int pageNo, int pageSize) {
         GoodsExample goodsExample = new GoodsExample();
-        PageUtils pageUtils = new PageUtils();
-        pageUtils.setCurrentPage(pageNo);
-        pageUtils.setPageSize(pageSize);
-        //将pageNo转为limit
-        pageUtils.setPageNo(pageNo);
-        goodsExample.setLimit(pageUtils.getPageNo());
+        goodsExample.setLimit(pageNo);
         goodsExample.setOffset(pageSize);
         //模糊查询
         if (StringUtils.isNotEmpty(searchStr)) {
             goodsExample.createCriteria().andNameLike('%' + searchStr + '%');
         }
         List<Goods> goodsList = goodsMapper.selectByExample(goodsExample);
-        pageUtils.setTotalCount(goodsMapper.countByExample(goodsExample));
         return goodsList;
+    }
+
+    @Override
+    public Map showGoodsListMap(String searchStr, int pageNo, int pageSize) {
+        GoodsExample goodsExample = new GoodsExample();
+        goodsExample.setLimit(pageNo);
+        goodsExample.setOffset(pageSize);
+        //模糊查询
+        if (StringUtils.isNotEmpty(searchStr)) {
+            goodsExample.createCriteria().andNameLike('%' + searchStr + '%');
+        }
+        List<Goods> goodsList = goodsMapper.selectByExample(goodsExample);
+        long counts = goodsMapper.countByExample(goodsExample);
+        Map<String, Object> goodsListMap = Maps.newHashMap();
+        goodsListMap.put("currentList", goodsList);
+        goodsListMap.put("totalCount", counts);
+        return goodsListMap;
     }
 
     @Override

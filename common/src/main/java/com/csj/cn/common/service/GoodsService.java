@@ -1,10 +1,10 @@
 package com.csj.cn.common.service;
 
 import com.csj.cn.common.dto.Goods;
-import com.csj.cn.common.utils.PageUtils;
 import com.csj.cn.common.vo.GoodsVo;
 
 import java.util.List;
+import java.util.Map;
 
 public interface GoodsService {
     /**
@@ -24,6 +24,16 @@ public interface GoodsService {
      * @return
      */
     List<Goods> showGoodsList(String searchStr, int pageNo, int pageSize);
+
+    /**
+     * 返回商品列表并封装为Map
+     *
+     * @param searchStr
+     * @param pageNo
+     * @param pageSize
+     * @return
+     */
+    Map showGoodsListMap(String searchStr, int pageNo, int pageSize);
 
     /**
      * 查询商品详情
