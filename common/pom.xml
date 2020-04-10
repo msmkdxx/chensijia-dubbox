@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <packaging>jar</packaging>
-    <groupId>com.kgc.cn</groupId>
+    <groupId>com.csj.cn</groupId>
     <artifactId>common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>common</name>
@@ -33,6 +33,12 @@
             <scope>provided</scope>
         </dependency>
         <!-- lombok 结束 -->
+        <!-- redis 开始 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!-- redis 结束 -->
         <!-- spring-boot-starter-activemq 开始 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -36,7 +36,9 @@ com\csj\cn\common\dto\GoodsExample$Criteria.class
 com\csj\cn\common\dto\UserExample.class
 com\csj\cn\common\service\OrdersService.class
 com\csj\cn\common\enums\ErrorEnums.class
+com\csj\cn\common\conf\RedisConfig.class
 com\csj\cn\common\dto\GoodsExample.class
+com\csj\cn\common\utils\RedisUtils.class
 com\csj\cn\common\dto\BookExample$Criterion.class
 com\csj\cn\common\dto\WxExample$Criterion.class
 com\csj\cn\common\dto\UserExample$Criteria.class

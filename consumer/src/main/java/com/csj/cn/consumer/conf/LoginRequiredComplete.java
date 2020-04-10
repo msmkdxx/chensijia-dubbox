@@ -2,8 +2,8 @@ package com.csj.cn.consumer.conf;
 
 import com.alibaba.dubbo.common.utils.StringUtils;
 import com.alibaba.fastjson.JSONObject;
+import com.csj.cn.common.utils.RedisUtils;
 import com.csj.cn.common.vo.LoginUser;
-import com.csj.cn.consumer.utils.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.method.HandlerMethod;

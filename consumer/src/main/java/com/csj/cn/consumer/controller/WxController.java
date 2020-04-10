@@ -4,10 +4,8 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSONObject;
 import com.csj.cn.common.service.WxService;
 import com.csj.cn.common.utils.HttpClientUtils;
+import com.csj.cn.common.utils.RedisUtils;
 import com.csj.cn.common.vo.LoginUser;
-import com.csj.cn.consumer.utils.RedisUtils;
-import com.csj.cn.consumer.utils.ReturnResult;
-import com.csj.cn.consumer.utils.ReturnResultUtils;
 import com.csj.cn.consumer.wx.WxConfig;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -15,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.IOException;
 

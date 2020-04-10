@@ -1,4 +1,4 @@
-package com.csj.cn.consumer.utils;
+package com.csj.cn.common.utils;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;

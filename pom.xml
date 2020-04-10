@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <packaging>pom</packaging>
-    <groupId>com.kgc.cn</groupId>
+    <groupId>com.csj.cn</groupId>
     <artifactId>chensijia-dubbox</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>chensijia-dubbox</name>
