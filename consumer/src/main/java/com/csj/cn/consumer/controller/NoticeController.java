@@ -3,6 +3,7 @@ package com.csj.cn.consumer.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSONObject;
 import com.csj.cn.common.dto.Notice;
+import com.csj.cn.common.enums.Color;
 import com.csj.cn.common.service.NoticeService;
 import com.csj.cn.common.utils.RedisUtils;
 import com.csj.cn.common.vo.LoginUser;
@@ -43,5 +44,18 @@ public class NoticeController {
     public void test(){
         redisUtils.set("title","content");
         redisUtils.expire("title",2);
+
+        Color color = Color.RED;
+        switch (color){
+            case RED:
+                color = Color.YELLOW;
+                break;
+            case YELLOW:
+                color = Color.GREEN;
+                break;
+            case GREEN:
+                color = Color.RED;
+                break;
+        }
     }
 }
