@@ -36,26 +36,30 @@ public class NoticeController {
     private RedisUtils redisUtils;
 
     @GetMapping(value = "/selectNotice")
-    public List<Notice> selectNotice(){
+    public List<Notice> selectNotice() {
         return noticeService.selectNoticeList();
     }
 
     @GetMapping(value = "/test")
-    public void test(){
-        redisUtils.set("title","content");
-        redisUtils.expire("title",2);
+    public void test() {
+        redisUtils.set("title", "content");
+        redisUtils.expire("title", 2);
+    }
 
-        Color color = Color.RED;
-        switch (color){
+    @GetMapping(value = "/testEnum")
+    public String testEnum(String color) {
+        String colorName = "";
+        switch (Color.matchOpCode(color)) {
             case RED:
-                color = Color.YELLOW;
+                colorName = Color.RED.getName();
                 break;
             case YELLOW:
-                color = Color.GREEN;
+                colorName = Color.YELLOW.getName();
                 break;
             case GREEN:
-                color = Color.RED;
+                colorName = Color.GREEN.getName();
                 break;
         }
+        return colorName;
     }
 }

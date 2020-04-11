@@ -2,9 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f4dd780-7fa6-4847-9276-aa8e9527d9c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/enums/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/csj/cn/common/enums/Color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/test/java/com/csj/cn/consumer/controller/NoticeControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/classes/com/csj/cn/consumer/controller/NoticeController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/test-classes/com/csj/cn/consumer/controller/NoticeControllerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/CommonApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/enums/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/csj/cn/common/enums/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/consumer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/controller/NoticeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/csj/cn/consumer/controller/NoticeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/csj/cn/consumer/controller/NoticeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/classes/com/csj/cn/consumer/controller/NoticeController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +49,7 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -50,11 +83,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.csj.cn.consumer.controller" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.csj.cn.provider.service" />
       <recent name="com.csj.cn.common.conf" />
@@ -70,7 +111,68 @@
       <recent name="D:\IdeaProjects\chensijia-dubbox\consumer\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConsumerApplication">
+  <component name="RunManager" selected="JUnit.NoticeControllerTest.testEnum">
+    <configuration name="NoticeControllerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.csj.cn.consumer.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.csj.cn.consumer.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.csj.cn.consumer.controller.NoticeControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoticeControllerTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.csj.cn.consumer.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.csj.cn.consumer.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.csj.cn.consumer.controller.NoticeControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoticeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.csj.cn.consumer.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.csj.cn.consumer.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.csj.cn.consumer.controller.NoticeControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoticeControllerTest.testEnum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.csj.cn.consumer.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.csj.cn.consumer.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.csj.cn.consumer.controller.NoticeControllerTest" />
+      <option name="METHOD_NAME" value="testEnum" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="consumer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.csj.cn.consumer.ConsumerApplication" />
@@ -106,7 +208,19 @@
     <list>
       <item itemvalue="Spring Boot.ProviderApplication " />
       <item itemvalue="Spring Boot.ConsumerApplication" />
+      <item itemvalue="JUnit.NoticeControllerTest" />
+      <item itemvalue="JUnit.NoticeControllerTest (1)" />
+      <item itemvalue="JUnit.NoticeControllerTest (2)" />
+      <item itemvalue="JUnit.NoticeControllerTest.testEnum" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.NoticeControllerTest.testEnum" />
+        <item itemvalue="JUnit.NoticeControllerTest (2)" />
+        <item itemvalue="JUnit.NoticeControllerTest (1)" />
+        <item itemvalue="JUnit.NoticeControllerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -144,7 +258,9 @@
       <workItem from="1586402959103" duration="16344000" />
       <workItem from="1586432188332" duration="79000" />
       <workItem from="1586478581283" duration="20071000" />
-      <workItem from="1586516445890" duration="864000" />
+      <workItem from="1586516445890" duration="1144000" />
+      <workItem from="1586565441916" duration="1085000" />
+      <workItem from="1586566655352" duration="4615000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1585743714270</created>
@@ -251,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586516612823</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="enum，switch">
+      <created>1586517554639</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1586517554639</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +396,8 @@
     <MESSAGE value="抢购修" />
     <MESSAGE value="ActiveMQ" />
     <MESSAGE value="定时，失效" />
-    <option name="LAST_COMMIT_MESSAGE" value="定时，失效" />
+    <MESSAGE value="enum，switch" />
+    <option name="LAST_COMMIT_MESSAGE" value="enum，switch" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Inspections" timestamp="1585728629864">
@@ -284,14 +408,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1586133830453" />
-    <state x="972" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1586517239400">
+    <state x="972" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1586566033700">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="972" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586517239400" />
+    <state x="972" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586566033700" />
     <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585798260935">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1585798260935" />
+    <state x="384" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586570149568">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="384" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1586570149568" />
     <state x="450" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586228682666">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -304,10 +432,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="518" y="118" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1586316065042" />
-    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1586516608070">
+    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1586572485417">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586516608070" />
+    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586572485417" />
     <state width="446" height="466" key="DebuggerActiveHint" timestamp="1586154738072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -320,62 +448,62 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="GrepConsoleSettings/0.0.1536.824@0.0.1536.824" timestamp="1585727273947" />
-    <state width="1493" height="191" key="GridCell.Tab.0.bottom" timestamp="1586510514632">
+    <state width="1493" height="257" key="GridCell.Tab.0.bottom" timestamp="1586572378643">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586510514632" />
-    <state width="1493" height="191" key="GridCell.Tab.0.center" timestamp="1586510514631">
+    <state width="1493" height="257" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586572378643" />
+    <state width="1493" height="257" key="GridCell.Tab.0.center" timestamp="1586572378642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586510514631" />
-    <state width="1493" height="191" key="GridCell.Tab.0.left" timestamp="1586510514631">
+    <state width="1493" height="257" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586572378642" />
+    <state width="1493" height="257" key="GridCell.Tab.0.left" timestamp="1586572378642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586510514631" />
-    <state width="1493" height="191" key="GridCell.Tab.0.right" timestamp="1586510514631">
+    <state width="1493" height="257" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586572378642" />
+    <state width="1493" height="257" key="GridCell.Tab.0.right" timestamp="1586572378643">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586510514631" />
-    <state width="1493" height="191" key="GridCell.Tab.1.bottom" timestamp="1586510514632">
+    <state width="1493" height="257" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586572378643" />
+    <state width="1493" height="257" key="GridCell.Tab.1.bottom" timestamp="1586572378643">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586510514632" />
-    <state width="1493" height="191" key="GridCell.Tab.1.center" timestamp="1586510514632">
+    <state width="1493" height="257" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586572378643" />
+    <state width="1493" height="257" key="GridCell.Tab.1.center" timestamp="1586572378643">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586510514632" />
-    <state width="1493" height="191" key="GridCell.Tab.1.left" timestamp="1586510514632">
+    <state width="1493" height="257" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586572378643" />
+    <state width="1493" height="257" key="GridCell.Tab.1.left" timestamp="1586572378643">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586510514632" />
-    <state width="1493" height="191" key="GridCell.Tab.1.right" timestamp="1586510514632">
+    <state width="1493" height="257" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586572378643" />
+    <state width="1493" height="257" key="GridCell.Tab.1.right" timestamp="1586572378643">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586510514632" />
-    <state width="1493" height="191" key="GridCell.Tab.2.bottom" timestamp="1586510514632">
+    <state width="1493" height="257" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586572378643" />
+    <state width="1493" height="191" key="GridCell.Tab.2.bottom" timestamp="1586570412825">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586510514632" />
-    <state width="1493" height="191" key="GridCell.Tab.2.center" timestamp="1586510514632">
+    <state width="1493" height="191" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586570412825" />
+    <state width="1493" height="191" key="GridCell.Tab.2.center" timestamp="1586570412825">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1586510514632" />
-    <state width="1493" height="191" key="GridCell.Tab.2.left" timestamp="1586510514632">
+    <state width="1493" height="191" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1586570412825" />
+    <state width="1493" height="191" key="GridCell.Tab.2.left" timestamp="1586570412825">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1586510514632" />
-    <state width="1493" height="191" key="GridCell.Tab.2.right" timestamp="1586510514632">
+    <state width="1493" height="191" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1586570412825" />
+    <state width="1493" height="191" key="GridCell.Tab.2.right" timestamp="1586570412825">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1586510514632" />
-    <state x="270" y="55" key="SettingsEditor" timestamp="1585881399734">
+    <state width="1493" height="191" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1586570412825" />
+    <state x="270" y="55" key="SettingsEditor" timestamp="1586570892385">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585881399734" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586516630188">
+    <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586570892385" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586517564153">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586516630188" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586517564153" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1586312970140">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -384,10 +512,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1585880707546" />
-    <state x="442" y="124" width="868" height="596" key="new project wizard" timestamp="1585879028125">
+    <state x="524" y="115" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586570072244">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="442" y="124" width="868" height="596" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1585879028125" />
+    <state x="524" y="115" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1586570072244" />
+    <state x="442" y="124" width="868" height="596" key="new project wizard" timestamp="1586572425915">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="442" y="124" width="868" height="596" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586572425915" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1586312336687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
