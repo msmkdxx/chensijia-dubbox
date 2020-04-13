@@ -43,10 +43,10 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <table schema="" tableName="notice">
+        <table schema="" tableName="orders">
             <!--默认不使用驼峰 写false才使用-->
             <property name="useActualColumnNames" value="false"/>
-            <columnOverride column="id" jdbcType="BIGINT" javaType="java.lang.Long"></columnOverride>
+            <columnOverride column="order_id" jdbcType="VARCHAR" javaType="java.lang.String"></columnOverride>
         </table>
 
         <!--<table schema="" tableName="store_info" domainObjectName="StoreInfo">-->

@@ -41,6 +41,6 @@ public interface GoodsService {
      * @param goodId
      * @return
      */
-    Goods selectByPrimaryKey(Long goodId);
+    Goods selectByPrimaryKey(String goodId);
 
 }

@@ -2,6 +2,7 @@ package com.csj.cn.provider.service;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.config.annotation.Service;
+import com.alibaba.fastjson.JSONObject;
 import com.csj.cn.common.dto.Goods;
 import com.csj.cn.common.dto.Orders;
 import com.csj.cn.common.dto.OrdersExample;
@@ -34,6 +35,8 @@ public class OrdersServiceImpl implements OrdersService {
     @Autowired
     private RedisUtils redisUtils;
 
+    String nameSpace = "TIME_TO_BUY:";
+
     @Override
     public boolean timeToBuy(OrdersVo ordersVo) {
         Goods goods = goodsMapper.selectByPrimaryKey(ordersVo.getGoodId());
@@ -42,9 +45,8 @@ public class OrdersServiceImpl implements OrdersService {
             OrdersExample ordersExample = new OrdersExample();
             ordersExample.createCriteria().andGoodIdEqualTo(ordersVo.getGoodId()).andPhoneEqualTo(ordersVo.getPhone());
             List<Orders> ordersList = ordersMapper.selectByExample(ordersExample);
-            if (ObjectUtils.isEmpty(ordersList)) {//没有这个订单
-                return true;
-            }
+            if (ObjectUtils.isEmpty(ordersList)) return true;
+
             return false;
         }
         return false;
@@ -54,13 +56,13 @@ public class OrdersServiceImpl implements OrdersService {
     @JmsListener(destination = "orders.madeOrder")
     public void createOrders(OrdersVo ordersVo) {
         Orders orders = new Orders();
-        if (!redisUtils.hasKey(ordersVo.getOrderId())) {
+        if (!redisUtils.hasKey(nameSpace + ordersVo.getOrderId())) {
             BeanUtils.copyProperties(ordersVo, orders);
             ordersMapper.insertSelective(orders);
             //修改库存
             goodsMapper.reduceCount(1, ordersVo.getGoodId());
-            redisUtils.set(ordersVo.getOrderId(), ordersVo);
-            redisUtils.expire(ordersVo.getOrderId(), 20);
+            redisUtils.set(nameSpace + ordersVo.getOrderId(), JSONObject.toJSONString(ordersVo));
+            redisUtils.expire(nameSpace + ordersVo.getOrderId(), 20);
         }
     }
 }

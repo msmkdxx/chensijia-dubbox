@@ -11,7 +11,7 @@ public class OrdersVo implements Serializable {
     private String orderId;
     private Double num;
     private String phone;
-    private Long goodId;
+    private String goodId;
     private Integer state;
     private Integer isPay;
     private Date createddate;

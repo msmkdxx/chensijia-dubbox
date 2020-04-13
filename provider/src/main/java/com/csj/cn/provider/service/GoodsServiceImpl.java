@@ -72,7 +72,7 @@ public class GoodsServiceImpl implements GoodsService {
     }
 
     @Override
-    public Goods selectByPrimaryKey(Long goodId) {
+    public Goods selectByPrimaryKey(String goodId) {
         try {
             return goodsMapper.selectByPrimaryKey(goodId);
         } catch (Exception e) {

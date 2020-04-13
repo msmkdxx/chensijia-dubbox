@@ -1,6 +1,7 @@
 package com.csj.cn.common.utils;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.BoundValueOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
@@ -582,5 +583,27 @@ public class RedisUtils {
      */
     public void delLock(String key) {
         redisTemplate.delete(key);
+    }
+
+    public Set<String> getKeys(String nameSpace) {
+        return redisTemplate.keys("*" + nameSpace + "*");
+    }
+
+    /**
+     * 判断规定时间内点击次数是否超过
+     * @param key
+     * @param count
+     * @param ttl
+     * @return
+     */
+    public boolean checkFreq(String key, long count, long ttl) {
+        boolean exists = redisTemplate.hasKey(key);
+        BoundValueOperations<String, Object> valueOps = redisTemplate.boundValueOps(key);
+        Long value = valueOps.increment(1);
+        if (null == value) value = count;
+
+        if (!exists) redisTemplate.expire(key, ttl, TimeUnit.SECONDS);
+
+        return value <= count;
     }
 }

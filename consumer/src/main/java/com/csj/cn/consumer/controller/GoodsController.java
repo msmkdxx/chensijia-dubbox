@@ -69,7 +69,7 @@ public class GoodsController {
 
     @ApiOperation(value = "查询商品详情")
     @GetMapping(value = "/selectByPrimaryKey")
-    public Goods selectByPrimaryKey(@RequestParam Long goodId) {
+    public Goods selectByPrimaryKey(@RequestParam String goodId) {
         return goodsService.selectByPrimaryKey(goodId);
     }
 }

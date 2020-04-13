@@ -37,20 +37,35 @@ public class OrdersController {
     @Autowired
     private RedisUtils redisUtils;
 
+    String nameSpace = "TIME_TO_BUY:";
+
     @LoginReqired
     @ApiOperation(value = "抢购")
     @GetMapping(value = "/timeToBuy")
-    public ReturnResult timeToBuy(@RequestParam long goodId, @CurrentUser LoginUser loginUser) {
-        OrdersVo ordersVo = new OrdersVo();
-        String orderId = loginUser.getId() + "" + UUID.randomUUID();
-        ordersVo.setOrderId(orderId);
-        ordersVo.setGoodId(goodId);
-        ordersVo.setPhone(loginUser.getPhone());
-        if (ordersService.timeToBuy(ordersVo)) {
-            activeMqUtils.sendQueueMsg("orders.madeOrder", ordersVo);
-            return ReturnResultUtils.returnSucess();
-        } else {
+    public ReturnResult timeToBuy(@RequestParam String goodId, @CurrentUser LoginUser loginUser) {
+        if (checkStatus(goodId)) {
+            OrdersVo ordersVo = new OrdersVo();
+            ordersVo.setOrderId(loginUser.getId() + "" + UUID.randomUUID());
+            ordersVo.setGoodId(goodId);
+            ordersVo.setPhone(loginUser.getPhone());
+            if (ordersService.timeToBuy(ordersVo)) {
+                activeMqUtils.sendQueueMsg("orders.madeOrder", ordersVo);
+                redisUtils.delLock(nameSpace + goodId);
+                return ReturnResultUtils.returnSucess();
+            }
+            redisUtils.delLock(nameSpace + goodId);
             return ReturnResultUtils.returnFail(11, "您不能再抢购了");
         }
+        return ReturnResultUtils.returnFail(12, "您点击的次数太频繁了");
+    }
+
+    /**
+     * 判断点击频率和上锁
+     *
+     * @param goodId
+     * @return
+     */
+    public boolean checkStatus(String goodId) {
+        return redisUtils.checkFreq(nameSpace + goodId, 2, 20) && redisUtils.lock(nameSpace + goodId, "1", 100);
     }
 }

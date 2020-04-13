@@ -14,7 +14,7 @@ import java.util.List;
  * @Author chensijia
  * @Date 2020/4/1010:32
  */
-@Configuration
+/*@Configuration
 @EnableScheduling
 public class ScheduledController {
     @Reference
@@ -26,4 +26,4 @@ public class ScheduledController {
         System.out.println("通知标题："+notice.getTitle()+",通知内容："+notice.getContent());
     }
 
-}
+}*/

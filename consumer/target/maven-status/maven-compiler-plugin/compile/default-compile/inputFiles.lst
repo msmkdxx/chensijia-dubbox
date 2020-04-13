@@ -3,11 +3,13 @@ D:\IdeaProjects\chensijia-dubbox\consumer\src\main\java\com\csj\cn\consumer\conf
 D:\IdeaProjects\chensijia-dubbox\consumer\src\main\java\com\csj\cn\consumer\utils\ReturnResultUtils.java
 D:\IdeaProjects\chensijia-dubbox\consumer\src\main\java\com\csj\cn\consumer\controller\UserController.java
 D:\IdeaProjects\chensijia-dubbox\consumer\src\main\java\com\csj\cn\consumer\conf\WebConfig.java
+D:\IdeaProjects\chensijia-dubbox\consumer\src\main\java\com\csj\cn\consumer\controller\HRedisController.java
 D:\IdeaProjects\chensijia-dubbox\consumer\src\main\java\com\csj\cn\consumer\conf\CurrentUserComplete.java
 D:\IdeaProjects\chensijia-dubbox\consumer\src\main\java\com\csj\cn\consumer\wx\WxConfig.java
 D:\IdeaProjects\chensijia-dubbox\consumer\src\main\java\com\csj\cn\consumer\conf\LoginReqired.java
 D:\IdeaProjects\chensijia-dubbox\consumer\src\main\java\com\csj\cn\consumer\utils\ReturnResult.java
 D:\IdeaProjects\chensijia-dubbox\consumer\src\main\java\com\csj\cn\consumer\controller\OrdersController.java
+D:\IdeaProjects\chensijia-dubbox\consumer\src\main\java\com\csj\cn\consumer\controller\NoticeController.java
 D:\IdeaProjects\chensijia-dubbox\consumer\src\main\java\com\csj\cn\consumer\utils\ActiveMqUtils.java
 D:\IdeaProjects\chensijia-dubbox\consumer\src\main\java\com\csj\cn\consumer\controller\ScheduledController.java
 D:\IdeaProjects\chensijia-dubbox\consumer\src\main\java\com\csj\cn\consumer\conf\LoginRequiredComplete.java

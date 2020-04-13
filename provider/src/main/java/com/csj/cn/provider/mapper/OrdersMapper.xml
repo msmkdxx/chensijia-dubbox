@@ -9,7 +9,7 @@
     <id column="order_id" jdbcType="VARCHAR" property="orderId" />
     <result column="num" jdbcType="DOUBLE" property="num" />
     <result column="phone" jdbcType="VARCHAR" property="phone" />
-    <result column="good_id" jdbcType="BIGINT" property="goodId" />
+    <result column="good_id" jdbcType="VARCHAR" property="goodId" />
     <result column="state" jdbcType="INTEGER" property="state" />
     <result column="is_pay" jdbcType="INTEGER" property="isPay" />
     <result column="createdDate" jdbcType="TIMESTAMP" property="createddate" />
@@ -142,7 +142,7 @@
       good_id, `state`, is_pay, 
       createdDate)
     values (#{orderId,jdbcType=VARCHAR}, #{num,jdbcType=DOUBLE}, #{phone,jdbcType=VARCHAR}, 
-      #{goodId,jdbcType=BIGINT}, #{state,jdbcType=INTEGER}, #{isPay,jdbcType=INTEGER}, 
+      #{goodId,jdbcType=VARCHAR}, #{state,jdbcType=INTEGER}, #{isPay,jdbcType=INTEGER}, 
       #{createddate,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.csj.cn.common.dto.Orders">
@@ -185,7 +185,7 @@
         #{phone,jdbcType=VARCHAR},
       </if>
       <if test="goodId != null">
-        #{goodId,jdbcType=BIGINT},
+        #{goodId,jdbcType=VARCHAR},
       </if>
       <if test="state != null">
         #{state,jdbcType=INTEGER},
@@ -225,7 +225,7 @@
         phone = #{record.phone,jdbcType=VARCHAR},
       </if>
       <if test="record.goodId != null">
-        good_id = #{record.goodId,jdbcType=BIGINT},
+        good_id = #{record.goodId,jdbcType=VARCHAR},
       </if>
       <if test="record.state != null">
         `state` = #{record.state,jdbcType=INTEGER},
@@ -250,7 +250,7 @@
     set order_id = #{record.orderId,jdbcType=VARCHAR},
       num = #{record.num,jdbcType=DOUBLE},
       phone = #{record.phone,jdbcType=VARCHAR},
-      good_id = #{record.goodId,jdbcType=BIGINT},
+      good_id = #{record.goodId,jdbcType=VARCHAR},
       `state` = #{record.state,jdbcType=INTEGER},
       is_pay = #{record.isPay,jdbcType=INTEGER},
       createdDate = #{record.createddate,jdbcType=TIMESTAMP}
@@ -272,7 +272,7 @@
         phone = #{phone,jdbcType=VARCHAR},
       </if>
       <if test="goodId != null">
-        good_id = #{goodId,jdbcType=BIGINT},
+        good_id = #{goodId,jdbcType=VARCHAR},
       </if>
       <if test="state != null">
         `state` = #{state,jdbcType=INTEGER},
@@ -294,7 +294,7 @@
     update orders
     set num = #{num,jdbcType=DOUBLE},
       phone = #{phone,jdbcType=VARCHAR},
-      good_id = #{goodId,jdbcType=BIGINT},
+      good_id = #{goodId,jdbcType=VARCHAR},
       `state` = #{state,jdbcType=INTEGER},
       is_pay = #{isPay,jdbcType=INTEGER},
       createdDate = #{createddate,jdbcType=TIMESTAMP}

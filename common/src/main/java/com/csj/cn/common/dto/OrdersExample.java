@@ -405,52 +405,62 @@ public class OrdersExample {
             return (Criteria) this;
         }
 
-        public Criteria andGoodIdEqualTo(Long value) {
+        public Criteria andGoodIdEqualTo(String value) {
             addCriterion("good_id =", value, "goodId");
             return (Criteria) this;
         }
 
-        public Criteria andGoodIdNotEqualTo(Long value) {
+        public Criteria andGoodIdNotEqualTo(String value) {
             addCriterion("good_id <>", value, "goodId");
             return (Criteria) this;
         }
 
-        public Criteria andGoodIdGreaterThan(Long value) {
+        public Criteria andGoodIdGreaterThan(String value) {
             addCriterion("good_id >", value, "goodId");
             return (Criteria) this;
         }
 
-        public Criteria andGoodIdGreaterThanOrEqualTo(Long value) {
+        public Criteria andGoodIdGreaterThanOrEqualTo(String value) {
             addCriterion("good_id >=", value, "goodId");
             return (Criteria) this;
         }
 
-        public Criteria andGoodIdLessThan(Long value) {
+        public Criteria andGoodIdLessThan(String value) {
             addCriterion("good_id <", value, "goodId");
             return (Criteria) this;
         }
 
-        public Criteria andGoodIdLessThanOrEqualTo(Long value) {
+        public Criteria andGoodIdLessThanOrEqualTo(String value) {
             addCriterion("good_id <=", value, "goodId");
             return (Criteria) this;
         }
 
-        public Criteria andGoodIdIn(List<Long> values) {
+        public Criteria andGoodIdLike(String value) {
+            addCriterion("good_id like", value, "goodId");
+            return (Criteria) this;
+        }
+
+        public Criteria andGoodIdNotLike(String value) {
+            addCriterion("good_id not like", value, "goodId");
+            return (Criteria) this;
+        }
+
+        public Criteria andGoodIdIn(List<String> values) {
             addCriterion("good_id in", values, "goodId");
             return (Criteria) this;
         }
 
-        public Criteria andGoodIdNotIn(List<Long> values) {
+        public Criteria andGoodIdNotIn(List<String> values) {
             addCriterion("good_id not in", values, "goodId");
             return (Criteria) this;
         }
 
-        public Criteria andGoodIdBetween(Long value1, Long value2) {
+        public Criteria andGoodIdBetween(String value1, String value2) {
             addCriterion("good_id between", value1, value2, "goodId");
             return (Criteria) this;
         }
 
-        public Criteria andGoodIdNotBetween(Long value1, Long value2) {
+        public Criteria andGoodIdNotBetween(String value1, String value2) {
             addCriterion("good_id not between", value1, value2, "goodId");
             return (Criteria) this;
         }

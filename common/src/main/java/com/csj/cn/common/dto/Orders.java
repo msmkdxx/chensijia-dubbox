@@ -48,7 +48,7 @@ public class Orders {
      *
      * @mbg.generated
      */
-    private Long goodId;
+    private String goodId;
 
     /**
      * Database Column Remarks:
@@ -161,7 +161,7 @@ public class Orders {
      *
      * @mbg.generated
      */
-    public Long getGoodId() {
+    public String getGoodId() {
         return goodId;
     }
 
@@ -173,7 +173,7 @@ public class Orders {
      *
      * @mbg.generated
      */
-    public void setGoodId(Long goodId) {
+    public void setGoodId(String goodId) {
         this.goodId = goodId;
     }
 
