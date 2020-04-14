@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50045
 File Encoding         : 65001
 
-Date: 2020-04-09 18:43:38
+Date: 2020-04-14 20:27:36
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -269,28 +269,62 @@ INSERT INTO `book` VALUES ('253', 'dd', 'dd', null, null, null, null, 'dd');
 -- ----------------------------
 DROP TABLE IF EXISTS `goods`;
 CREATE TABLE `goods` (
-  `good_id` bigint(11) NOT NULL auto_increment COMMENT '商品编号',
+  `good_id` varchar(11) NOT NULL COMMENT '商品编号',
   `name` varchar(50) default NULL COMMENT '商品名',
   `price` double default NULL COMMENT '商品价格',
   `content` varchar(100) default NULL COMMENT '商品描述',
   `count` int(11) default NULL,
   PRIMARY KEY  (`good_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of goods
 -- ----------------------------
 INSERT INTO `goods` VALUES ('1', 'Advanced SystemCare 12 Ultimate 清理杀毒软件', '129', '全新的反病毒引擎，超敏感的检测和删除最新的病毒，木马软件，间谍软件', '10');
+INSERT INTO `goods` VALUES ('10', '手机', '6000', '手机的描述', '12');
+INSERT INTO `goods` VALUES ('11', '华为手机', '6000', '手机的描述', '4');
 INSERT INTO `goods` VALUES ('2', 'Advanced SystemCare 13 Pro 清理优化工具', '149', '一键清理优化和修复、深度您的PC，清理Windows注册表、自动在线反浏览器跟踪保护隐私，提升电脑速度高达200％。', '10');
 INSERT INTO `goods` VALUES ('3', 'AMC Security 手机管家- 清理', '99', '加速、安全', '10');
 INSERT INTO `goods` VALUES ('4', 'Ashampoo Burning Studio 20 刻录软件 许可证', '50', '许可证', '11');
-INSERT INTO `goods` VALUES ('5', 'Avast Business Antivirus Pro Plus 商业专业增强版 企业全面保护', '379', '防护软件', '12');
+INSERT INTO `goods` VALUES ('5', 'Avast Business Antivirus Pro Plus 商业专业增强版 企业全面保护', '379', '防护软件', '11');
 INSERT INTO `goods` VALUES ('6', 'Avast Business Antivirus Pro Plus 商业专业增强版 企业全面保护', '254', '许可证', '11');
-INSERT INTO `goods` VALUES ('7', 'Avast Business Antivirus Pro 商业专业版 企业杀毒软件', '216', '许可证', '12');
+INSERT INTO `goods` VALUES ('7', 'Avast Business Antivirus Pro 商业专业版 企业杀毒软件', '216', '许可证', '11');
 INSERT INTO `goods` VALUES ('8', 'Avast Business Antivirus 商业版 小型企业防病毒软件', '230', '许可证', '12');
 INSERT INTO `goods` VALUES ('9', 'Avast Premier 杀毒软件 高级版 激活码', '99', '许可证', '11');
-INSERT INTO `goods` VALUES ('10', '手机', '6000', '手机的描述', '12');
-INSERT INTO `goods` VALUES ('11', '华为手机', '6000', '手机的描述', '4');
+
+-- ----------------------------
+-- Table structure for goods_like
+-- ----------------------------
+DROP TABLE IF EXISTS `goods_like`;
+CREATE TABLE `goods_like` (
+  `id` bigint(11) NOT NULL auto_increment,
+  `good_id` varchar(11) NOT NULL COMMENT '商品id',
+  `user_id` bigint(11) NOT NULL COMMENT '用户id',
+  `status` int(1) default '0' COMMENT '点赞状态(0：取消点赞，1：点赞)',
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of goods_like
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for notice
+-- ----------------------------
+DROP TABLE IF EXISTS `notice`;
+CREATE TABLE `notice` (
+  `id` bigint(8) NOT NULL auto_increment,
+  `title` varchar(20) NOT NULL COMMENT '通知标题',
+  `content` varchar(50) NOT NULL COMMENT '通知内容',
+  `u_id` bigint(11) NOT NULL,
+  `current_time` datetime NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of notice
+-- ----------------------------
+INSERT INTO `notice` VALUES ('1', '作业', '写代码', '1', '2020-04-10 11:44:54');
 
 -- ----------------------------
 -- Table structure for orders
@@ -300,7 +334,7 @@ CREATE TABLE `orders` (
   `order_id` varchar(40) NOT NULL COMMENT '订单号',
   `num` double default NULL COMMENT '商品总价',
   `phone` varchar(11) NOT NULL,
-  `good_id` bigint(8) NOT NULL,
+  `good_id` varchar(8) NOT NULL,
   `state` int(1) NOT NULL default '0' COMMENT '订单状态',
   `is_pay` int(1) default NULL,
   `createdDate` datetime default NULL COMMENT '创建时间',
@@ -314,6 +348,8 @@ INSERT INTO `orders` VALUES ('10af3c1c-d6cf-477f-a773-104885865149', null, '1885
 INSERT INTO `orders` VALUES ('1296b6832-8e2a-492c-ac6c-4053ec77b076', null, '18852072789', '10', '0', null, null);
 INSERT INTO `orders` VALUES ('152cfcaea-3962-41c2-b353-6ab617169799', null, '18852072789', '1', '0', null, null);
 INSERT INTO `orders` VALUES ('15faf6c69-a55e-4114-a314-d9dd02a36eb2', null, '18852072789', '11', '0', null, null);
+INSERT INTO `orders` VALUES ('16eaa27d4-9d5e-449e-81dd-3d2225a2d4c5', null, '18852072789', '7', '0', null, null);
+INSERT INTO `orders` VALUES ('1c89916d9-7746-4152-b883-f5b25f601f9c', null, '18852072789', '5', '0', null, null);
 INSERT INTO `orders` VALUES ('1f06322ed-58ed-41b9-b8d9-7b9ec0cc6908', null, '18852072789', '2', '0', null, null);
 INSERT INTO `orders` VALUES ('519f72f9-960f-4193-a153-c49701a37af1', null, '18852072789', '4', '0', null, null);
 INSERT INTO `orders` VALUES ('96a27159-0969-439d-95ec-76aae3da390d', null, '18852072789', '3', '0', null, null);
