@@ -24,6 +24,7 @@ import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.util.ObjectUtils;
@@ -132,6 +133,7 @@ public class GoodsController {
     /**
      * 定时将redis中的数据存入数据库
      */
+    @Async
     @Scheduled(cron = "0 0 1 * * ?")
     public void scheduledInsertGoodsLike() {
         Set<String> keys = redisUtils.getKeys(goods_like);
@@ -143,7 +145,6 @@ public class GoodsController {
             goodsLike.setStatus(getStatus(Long.parseLong(goodIdAndUserIds[1]), goodIdAndUserIds[0]));
             goodsLikeService.insertGoodsLike(goodsLike);
         });
-//        redisUtils.del(goods_like);
     }
 
     /**

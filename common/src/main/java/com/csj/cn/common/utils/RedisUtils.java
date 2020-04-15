@@ -585,12 +585,19 @@ public class RedisUtils {
         redisTemplate.delete(key);
     }
 
+    /**
+     * 获取nameSpace下的keys
+     *
+     * @param nameSpace
+     * @return
+     */
     public Set<String> getKeys(String nameSpace) {
         return redisTemplate.keys("*" + nameSpace + "*");
     }
 
     /**
      * 判断规定时间内点击次数是否超过
+     *
      * @param key
      * @param count
      * @param ttl
