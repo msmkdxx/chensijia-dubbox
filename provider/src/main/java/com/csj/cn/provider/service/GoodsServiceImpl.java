@@ -8,6 +8,8 @@ import com.csj.cn.common.dto.GoodsExample;
 import com.csj.cn.common.service.GoodsService;
 import com.csj.cn.common.utils.PageUtils;
 import com.csj.cn.common.vo.GoodsVo;
+import com.csj.cn.provider.conf.DSSelector;
+import com.csj.cn.provider.conf.MultipleDataSourceHelper;
 import com.csj.cn.provider.mapper.GoodsMapper;
 import com.google.common.collect.Maps;
 import org.springframework.beans.BeanUtils;
@@ -79,5 +81,14 @@ public class GoodsServiceImpl implements GoodsService {
             e.printStackTrace();
         }
         return null;
+    }
+
+    @Override
+    @DSSelector(MultipleDataSourceHelper.SLAVE)
+    public Goods selectGood() {
+//        MultipleDataSourceHelper.set(MultipleDataSourceHelper.MASTER);
+//        MultipleDataSourceHelper.set(MultipleDataSourceHelper.SLAVE);
+        List<Goods> goodsList = goodsMapper.selectByExample(null);
+        return goodsList.get(0);
     }
 }

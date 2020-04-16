@@ -166,4 +166,9 @@ public class GoodsController {
         }
         return 0;
     }
+
+    @GetMapping(value = "/selectGood")
+    public Goods selectGood() {
+        return goodsService.selectGood();
+    }
 }
