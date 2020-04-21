@@ -1,5 +1,6 @@
 package com.csj.cn.consumer.controller;
 
+import com.csj.cn.common.enums.Color;
 import com.csj.cn.common.utils.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -34,5 +35,22 @@ public class HRedisController {
     @GetMapping(value = "/getFreq")
     public boolean getFreq() {
         return redisUtils.checkFreq("11", 3, 10);
+    }
+
+    @GetMapping(value = "/testEnum")
+    public String testEnum(String color) {
+        String colorName = "";
+        switch (Color.matchOpCode(color)) {
+            case RED:
+                colorName = Color.RED.getName();
+                break;
+            case YELLOW:
+                colorName = Color.YELLOW.getName();
+                break;
+            case GREEN:
+                colorName = Color.GREEN.getName();
+                break;
+        }
+        return colorName;
     }
 }

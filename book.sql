@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50045
 File Encoding         : 65001
 
-Date: 2020-04-14 20:27:36
+Date: 2020-04-21 09:17:11
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -309,24 +309,6 @@ CREATE TABLE `goods_like` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for notice
--- ----------------------------
-DROP TABLE IF EXISTS `notice`;
-CREATE TABLE `notice` (
-  `id` bigint(8) NOT NULL auto_increment,
-  `title` varchar(20) NOT NULL COMMENT '通知标题',
-  `content` varchar(50) NOT NULL COMMENT '通知内容',
-  `u_id` bigint(11) NOT NULL,
-  `current_time` datetime NOT NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of notice
--- ----------------------------
-INSERT INTO `notice` VALUES ('1', '作业', '写代码', '1', '2020-04-10 11:44:54');
-
--- ----------------------------
 -- Table structure for orders
 -- ----------------------------
 DROP TABLE IF EXISTS `orders`;
@@ -356,69 +338,6 @@ INSERT INTO `orders` VALUES ('96a27159-0969-439d-95ec-76aae3da390d', null, '1885
 INSERT INTO `orders` VALUES ('b81a7638-6215-4c52-a641-df3b52b3c51e', null, '18852072789', '6', '0', null, null);
 
 -- ----------------------------
--- Table structure for role
--- ----------------------------
-DROP TABLE IF EXISTS `role`;
-CREATE TABLE `role` (
-  `id` int(11) NOT NULL auto_increment,
-  `name` varchar(255) default NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of role
--- ----------------------------
-INSERT INTO `role` VALUES ('1', '最强王者');
-INSERT INTO `role` VALUES ('2', '傲视宗师');
-INSERT INTO `role` VALUES ('3', '超凡大师');
-INSERT INTO `role` VALUES ('4', '璀璨钻石');
-INSERT INTO `role` VALUES ('5', '华贵铂金');
-INSERT INTO `role` VALUES ('6', '荣耀黄金');
-INSERT INTO `role` VALUES ('7', '不屈白银');
-INSERT INTO `role` VALUES ('8', '英勇黄铜');
-INSERT INTO `role` VALUES ('9', '坚韧黑铁');
-
--- ----------------------------
--- Table structure for tusers
--- ----------------------------
-DROP TABLE IF EXISTS `tusers`;
-CREATE TABLE `tusers` (
-  `id` int(11) NOT NULL auto_increment,
-  `name` varchar(255) default NULL,
-  `password` varchar(255) default NULL,
-  `age` int(11) default NULL,
-  `sex` varchar(255) default NULL,
-  `address` varchar(255) default NULL,
-  `usertype` varchar(255) default NULL,
-  `roleid` int(11) default NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of tusers
--- ----------------------------
-INSERT INTO `tusers` VALUES ('1', 'admin', '123456', null, null, null, '1', '1');
-INSERT INTO `tusers` VALUES ('2', '张三', '123456', '100', '1', null, null, '1');
-INSERT INTO `tusers` VALUES ('3', 'aa', '123', '22', '1', null, null, '1');
-INSERT INTO `tusers` VALUES ('4', '李四', '123456', null, null, null, null, '1');
-INSERT INTO `tusers` VALUES ('5', '王五', '123456', null, null, null, null, '1');
-INSERT INTO `tusers` VALUES ('6', '赵六', '123456', '22', '1', null, null, '1');
-INSERT INTO `tusers` VALUES ('12', '王五', '123456', null, null, null, '2', '2');
-INSERT INTO `tusers` VALUES ('13', 'cc', '11111', '0', '0', null, null, '2');
-INSERT INTO `tusers` VALUES ('15', 'cc', '11111', null, null, null, null, '2');
-INSERT INTO `tusers` VALUES ('16', 'cc', '11111', null, null, null, null, '2');
-INSERT INTO `tusers` VALUES ('17', 'bb', '147258', null, null, null, null, '2');
-INSERT INTO `tusers` VALUES ('18', 'dd', '11111', null, null, null, null, null);
-INSERT INTO `tusers` VALUES ('19', '李四四', '654321', null, null, null, null, null);
-INSERT INTO `tusers` VALUES ('20', 'ee', '11111', null, null, null, null, null);
-INSERT INTO `tusers` VALUES ('21', '李四四1', '654321', null, null, null, null, null);
-INSERT INTO `tusers` VALUES ('22', 'ff', '11111', null, null, null, null, null);
-INSERT INTO `tusers` VALUES ('23', 'ab', '123', null, null, null, null, null);
-INSERT INTO `tusers` VALUES ('25', 'aaaaa', 'bbbbb', '18', '女', null, null, null);
-INSERT INTO `tusers` VALUES ('26', '王五', '147258', null, null, null, null, null);
-INSERT INTO `tusers` VALUES ('27', '嘻哈', '牛屁', null, null, null, null, null);
-
--- ----------------------------
 -- Table structure for user
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
@@ -439,6 +358,45 @@ CREATE TABLE `user` (
 INSERT INTO `user` VALUES ('1', '18852072789', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'admin', null, null, null);
 INSERT INTO `user` VALUES ('4', '18852072799', '7c4a8d09ca3762af61e59520943dc26494f8941b', '张三', null, null, null);
 INSERT INTO `user` VALUES ('5', '18852072779', '7c4a8d09ca3762af61e59520943dc26494f8941b', '李四', null, null, null);
+
+-- ----------------------------
+-- Table structure for users
+-- ----------------------------
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` bigint(11) NOT NULL auto_increment,
+  `name` varchar(255) default NULL,
+  `password` varchar(255) default NULL,
+  `age` int(11) default NULL,
+  `sex` varchar(255) default NULL,
+  `address` varchar(255) default NULL,
+  `usertype` varchar(255) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of users
+-- ----------------------------
+INSERT INTO `users` VALUES ('1', 'admin', '123456', null, null, null, '1');
+INSERT INTO `users` VALUES ('2', '张三', '123456', '100', '1', null, null);
+INSERT INTO `users` VALUES ('3', 'aa', '123', '22', '1', null, null);
+INSERT INTO `users` VALUES ('4', '李四', '123456', null, null, null, null);
+INSERT INTO `users` VALUES ('5', '王五', '123456', null, null, null, null);
+INSERT INTO `users` VALUES ('6', '赵六', '123456', '22', '1', null, null);
+INSERT INTO `users` VALUES ('12', '王五', '123456', null, null, null, '2');
+INSERT INTO `users` VALUES ('13', 'cc', '11111', '0', '0', null, null);
+INSERT INTO `users` VALUES ('15', 'cc', '11111', null, null, null, null);
+INSERT INTO `users` VALUES ('16', 'cc', '11111', null, null, null, null);
+INSERT INTO `users` VALUES ('17', 'bb', '147258', null, null, null, null);
+INSERT INTO `users` VALUES ('18', 'dd', '11111', null, null, null, null);
+INSERT INTO `users` VALUES ('19', '李四四', '654321', null, null, null, null);
+INSERT INTO `users` VALUES ('20', 'ee', '11111', null, null, null, null);
+INSERT INTO `users` VALUES ('21', '李四四1', '654321', null, null, null, null);
+INSERT INTO `users` VALUES ('22', 'ff', '11111', null, null, null, null);
+INSERT INTO `users` VALUES ('23', 'ab', '123', null, null, null, null);
+INSERT INTO `users` VALUES ('25', 'aaaaa', 'bbbbb', '18', '女', null, null);
+INSERT INTO `users` VALUES ('26', '王五', '147258', null, null, null, null);
+INSERT INTO `users` VALUES ('27', '嘻哈', '牛屁', null, null, null, null);
 
 -- ----------------------------
 -- Table structure for wx
