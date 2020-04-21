@@ -43,6 +43,4 @@ public interface GoodsService {
      */
     Goods selectByPrimaryKey(String goodId);
 
-    Goods selectGood();
-
 }

@@ -79,8 +79,8 @@ public class GoodsController {
     @ApiOperation(value = "返回商品列表")
     @GetMapping(value = "/selectGoods")
     public PageUtils<List<Goods>> showGoodsList(@RequestParam(name = "searchStr", required = false, defaultValue = "") String searchStr,
-                                                @RequestParam(name = "pageNo", required = true) int pageNo,
-                                                @RequestParam(name = "pageSize", required = true) int pageSize) {
+                                                @RequestParam(name = "pageNo", required = false, defaultValue = "1") int pageNo,
+                                                @RequestParam(name = "pageSize", required = false, defaultValue = "10") int pageSize) {
         PageUtils pageUtils = new PageUtils();
         pageUtils.setPageNo(pageNo);
         pageUtils.setCurrentPage(pageNo);
@@ -167,8 +167,4 @@ public class GoodsController {
         return 0;
     }
 
-    @GetMapping(value = "/selectGood")
-    public Goods selectGood() {
-        return goodsService.selectGood();
-    }
 }

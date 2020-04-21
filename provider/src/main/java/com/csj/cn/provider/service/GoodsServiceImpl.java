@@ -57,7 +57,10 @@ public class GoodsServiceImpl implements GoodsService {
     }
 
     @Override
+    @DSSelector(MultipleDataSourceHelper.MASTER)
     public Map showGoodsListMap(String searchStr, int pageNo, int pageSize) {
+        //        MultipleDataSourceHelper.set(MultipleDataSourceHelper.MASTER);
+        //        MultipleDataSourceHelper.set(MultipleDataSourceHelper.SLAVE);
         GoodsExample goodsExample = new GoodsExample();
         goodsExample.setLimit(pageNo);
         goodsExample.setOffset(pageSize);
@@ -83,12 +86,4 @@ public class GoodsServiceImpl implements GoodsService {
         return null;
     }
 
-    @Override
-    @DSSelector(MultipleDataSourceHelper.SLAVE)
-    public Goods selectGood() {
-//        MultipleDataSourceHelper.set(MultipleDataSourceHelper.MASTER);
-//        MultipleDataSourceHelper.set(MultipleDataSourceHelper.SLAVE);
-        List<Goods> goodsList = goodsMapper.selectByExample(null);
-        return goodsList.get(0);
-    }
 }
