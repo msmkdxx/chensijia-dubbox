@@ -15,4 +15,7 @@ public class OrdersVo implements Serializable {
     private Integer state;
     private Integer isPay;
     private Date createddate;
+
+    private String name;
+    private double price;
 }
